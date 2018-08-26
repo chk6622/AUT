@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//Excuter/NormalExcuter.py=utf-8
 encoding//IeeexploreSpider/ApiSpider.py=utf-8
 encoding//IeeexploreSpider/WebPageSpider.py=utf-8
 encoding//dao/MongoDBDAO.py=utf-8

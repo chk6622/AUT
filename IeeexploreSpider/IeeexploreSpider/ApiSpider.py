@@ -21,6 +21,7 @@ class IeeeApiSpider(object):
     QUERY_RETURN_MAX_RESULTS=2  #max is 200
     MAX_QUERY_LIMIT=200
     TOTAL_MAX_RESULT=0
+    CUR_QUERY_COUNT=0  #current query count
     
     def __init__(self,apiKEY=None,queryReturnMaxResult=None):
         if apiKEY:
@@ -44,11 +45,12 @@ class IeeeApiSpider(object):
             while True:
                 query.startingResult(begin)
                 results = query.callAPI(debugModeOff=True)
+                self.CUR_QUERY_COUNT+=1
                 articles=self.getArticles(results)  #get articles list
                 if articles:
                     lReturn.append(articles)  # add articles to result list
                     size=len(articles)  #get query total number
-                    if size==self.MAX_RESULTS and size <= self.TOTAL_MAX_RESULT:  #if still has more articles,continue query
+                    if size==self.MAX_RESULTS and size <= self.TOTAL_MAX_RESULT and self.CUR_QUERY_COUNT<=self.TOTAL_MAX_RESULT:  #if still has more articles,continue query
                         begin=len(lReturn)+1
                     else:
                         break

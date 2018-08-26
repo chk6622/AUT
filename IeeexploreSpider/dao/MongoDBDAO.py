@@ -74,7 +74,7 @@ class MongoDBDAO:
                 print err
         return None
             
-    def insertOneData(self, collectionName, **dataSet):
+    def insertOneData(self, collectionName=DB_COLL, **dataSet):
         '''
         insert data into the mongoDB
         @param collectionName: : collection name of the database
@@ -93,7 +93,7 @@ class MongoDBDAO:
             print err
         return sReturn
         
-    def insertFile(self, filePath, saveFilename, collectionName):
+    def insertFile(self, filePath, saveFilename, collectionName=DB_COLL_BIN):
         '''
         insert file into the mongodb
         @param filePath: file path which will be inserted
