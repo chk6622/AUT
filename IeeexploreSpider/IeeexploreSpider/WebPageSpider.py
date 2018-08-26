@@ -15,15 +15,16 @@ import cookielib
 class WebPageSpider(object):
     
     MAIN_PAGE_URL=r'https://www.ieee.org/'
-    COOKIE_NAME=r'cookie.txt'
+    COOKIE_PATH=r'../temp/cookie.txt'
+    TEMP_DOC_PATH=r'../temp/'
     
-    def __init__(self,mainPageUrl=None,cookieName=None):
+    def __init__(self,mainPageUrl=None,cookiePath=None):
         if mainPageUrl:
             self.MAIN_PAGE_URL=mainPageUrl
-        if cookieName:
-            self.COOKIE_NAME=cookieName
+        if cookiePath:
+            self.COOKIE_PATH=cookiePath
         #claim a MozillaCookieJar instance to save cookie
-        cookie = cookielib.MozillaCookieJar(self.COOKIE_NAME)
+        cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
         opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
         try:
             #access main page, and save attributes to the cookie
@@ -33,6 +34,16 @@ class WebPageSpider(object):
         except Exception, err:
             print err
         
+    def generateTempFilePath(self,fileName):
+        '''
+        get temp file path
+        @param fileName:temp file name
+        @return: temp file path  
+        '''
+        sReturn=None
+        if fileName:
+            sReturn=self.TEMP_DOC_PATH+fileName
+        return sReturn
     
     def getRealPdfUrl(self,pdfUrl):
         '''
@@ -43,7 +54,7 @@ class WebPageSpider(object):
         sReturn=None
         if pdfUrl:
             #claim a MozillaCookieJar instance to save cookie
-            cookie = cookielib.MozillaCookieJar(self.COOKIE_NAME)
+            cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
             opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
             #access pdfUrl
             result = opener.open(pdfUrl)
