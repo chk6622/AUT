@@ -19,8 +19,8 @@ Key Rate Limits
 class IeeeApiSpider(object):
     API_KEY=r'mghspz84xgsy6sawfgn3tm7k'
     QUERY_RETURN_MAX_RESULTS=2  #max is 200
-    MAX_QUERY_LIMIT=200
-    TOTAL_MAX_RESULT=0
+    MAX_QUERY_COUNT_LIMIT=3
+    TOTAL_MAX_RESULTS=0
     CUR_QUERY_COUNT=0  #current query count
     
     def __init__(self,apiKEY=None,queryReturnMaxResult=None):
@@ -28,7 +28,7 @@ class IeeeApiSpider(object):
             self.API_KEY=apiKEY
         if queryReturnMaxResult:
             self.QUERY_RETURN_MAX_RESULTS=queryReturnMaxResult
-        self.TOTAL_MAX_RESULT=self.MAX_QUERY_LIMIT*self.QUERY_RETURN_MAX_RESULTS
+        self.TOTAL_MAX_RESULTS=self.MAX_QUERY_COUNT_LIMIT*self.QUERY_RETURN_MAX_RESULTS
     
     def queryData(self, keyWords):
         '''
@@ -50,7 +50,7 @@ class IeeeApiSpider(object):
                 if articles:
                     lReturn.append(articles)  # add articles to result list
                     size=len(articles)  #get query total number
-                    if size==self.MAX_RESULTS and size <= self.TOTAL_MAX_RESULT and self.CUR_QUERY_COUNT<=self.TOTAL_MAX_RESULT:  #if still has more articles,continue query
+                    if size==self.QUERY_RETURN_MAX_RESULTS and self.CUR_QUERY_COUNT<self.TOTAL_MAX_RESULTS:  #if still has more articles,continue query
                         begin=len(lReturn)+1
                     else:
                         break
@@ -94,6 +94,6 @@ class IeeeApiSpider(object):
 if __name__ == '__main__':
     keyWords=r'sworm'
     idf=IeeeApiSpider()
-    idf.queryData(keyWords)
+    print idf.queryData(keyWords)
 
     
