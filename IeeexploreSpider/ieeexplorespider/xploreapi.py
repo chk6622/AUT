@@ -96,7 +96,7 @@ class XPLORE:
     # return void
     def startingResult(self, start):
 
-        self.startRecord = math.ceil(start) if (start > 0) else 1
+        self.startRecord = int(math.ceil(start) if (start > 0) else 1)
 
 
     # set the maximum number of results
@@ -104,7 +104,7 @@ class XPLORE:
     # return void
     def maximumResults(self, maximum):
 
-        self.resultSetMax = math.ceil(maximum) if (maximum > 0) else 25
+        self.resultSetMax = int(math.ceil(maximum) if (maximum > 0) else 25)
         if self.resultSetMax > self.resultSetMaxCap:
             self.resultSetMax = self.resultSetMaxCap
 
@@ -334,7 +334,7 @@ class XPLORE:
     def callAPI(self, debugModeOff=True):
 
         str = self.buildQuery()
-        print str
+#         print str
 
         if debugModeOff is False:
         

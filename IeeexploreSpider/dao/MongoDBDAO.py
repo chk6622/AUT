@@ -14,6 +14,7 @@ from cStringIO import StringIO
 import types 
 from hamcrest.core.core.isnone import none
 from bson.objectid import ObjectId
+import os
 
 class MongoDBDAO:
     DB_NAME = r'test1'
@@ -93,23 +94,31 @@ class MongoDBDAO:
             print err
         return sReturn
         
-    def insertFile(self, filePath, saveFilename, collectionName=DB_COLL_BIN):
+    def insertFile(self, filePath, saveFilename, collectionName=DB_COLL_BIN, isDelFile=False):
         '''
         insert file into the mongodb
         @param filePath: file path which will be inserted
         @param saveFilename: file name which is in the mongodb
         @param collectionName: collection name of the database
+        @param isDelFile: if true then delete the file which is filePath
         @return: if insert success return id which is in the mongoDB, else return None 
         '''
         sReturn=None
         try:
-            if filePath and type(filePath)==types.StringType:
+            if filePath:
                 filePath=filePath.decode('utf-8')
                 with open (filePath,'rb') as fileObj:
                     content = StringIO(fileObj.read())
                     sReturn=self.insertBinaryData(content.getvalue(), saveFilename, collectionName)
+            
         except Exception, err:
             print err
+        finally:
+            if isDelFile:
+                try:
+                    os.remove(filePath)
+                except Exception, err:
+                    print err
         return sReturn
 
                     

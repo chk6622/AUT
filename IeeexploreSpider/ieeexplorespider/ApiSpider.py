@@ -18,8 +18,8 @@ Key Rate Limits
 '''
 class IeeeApiSpider(object):
     API_KEY=r'mghspz84xgsy6sawfgn3tm7k'
-    QUERY_RETURN_MAX_RESULTS=2  #max is 200
-    MAX_QUERY_COUNT_LIMIT=3
+    QUERY_RETURN_MAX_RESULTS=5  #max is 200
+    MAX_QUERY_COUNT_LIMIT=2
     TOTAL_MAX_RESULTS=0
     CUR_QUERY_COUNT=0  #current query count
     
@@ -36,9 +36,10 @@ class IeeeApiSpider(object):
         @param keyWords: key words
         @return: a list which contains query results, and every result is the json formate. The max results count is 40000  
         '''
+#         lReturn=[{"_id":"5b839c9b7bbd7112ec94e5bf","issn":"0148-9267","start_page":"106","publication_number":6720219,"rank":16,"article_number":"6792690","title":"&#201;velyne Gayou, Editor: Polychrome Portraits 14: Pierre Schaeffer","abstract_url":"https://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6792690","issue":"1","is_number":6790986,"index_terms":{},"publication_title":"Computer Music Journal","volume":"34","access_type":"LOCKED","content_type":"Journals","authors":{"authors":[{"author_order":1,"affiliation":"San Francisco, California, USA.","full_name":"Thom Blum"}]},"publication_date":"March 2010","fileId":"","publisher":"MIT Press","doi":"10.1162/comj.2010.34.1.106","pdf_url":"https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690","partnum":"6792690","end_page":"111","citing_paper_count":0}]
         lReturn=[]
         try:
-            begin=0  #query start record number
+            begin=1  #query start record number
             query=XPLORE(self.API_KEY)
             query.maximumResults(self.QUERY_RETURN_MAX_RESULTS)
             query.queryText(keyWords)
@@ -48,9 +49,9 @@ class IeeeApiSpider(object):
                 self.CUR_QUERY_COUNT+=1
                 articles=self.getArticles(results)  #get articles list
                 if articles:
-                    lReturn.append(articles)  # add articles to result list
+                    lReturn.extend(articles)  # add articles to result list
                     size=len(articles)  #get query total number
-                    if size==self.QUERY_RETURN_MAX_RESULTS and self.CUR_QUERY_COUNT<self.TOTAL_MAX_RESULTS:  #if still has more articles,continue query
+                    if size==self.QUERY_RETURN_MAX_RESULTS and self.CUR_QUERY_COUNT<self.MAX_QUERY_COUNT_LIMIT:  #if still has more articles,continue query
                         begin=len(lReturn)+1
                     else:
                         break
@@ -93,7 +94,11 @@ class IeeeApiSpider(object):
     
 if __name__ == '__main__':
     keyWords=r'sworm'
+#     query=XPLORE(r'mghspz84xgsy6sawfgn3tm7k')
+#     query.queryText(keyWords)
+#     print query.callAPI()  
     idf=IeeeApiSpider()
-    print idf.queryData(keyWords)
+    for itr in idf.queryData(keyWords):
+        print itr
 
     

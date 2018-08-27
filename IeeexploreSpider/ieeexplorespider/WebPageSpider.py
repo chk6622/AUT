@@ -11,6 +11,8 @@ from bs4 import BeautifulSoup
 import socket
 import requests
 import cookielib
+import os
+from utiles.PrintTool import PrintTool
 
 class WebPageSpider(object):
     
@@ -23,14 +25,16 @@ class WebPageSpider(object):
             self.MAIN_PAGE_URL=mainPageUrl
         if cookiePath:
             self.COOKIE_PATH=cookiePath
-        #claim a MozillaCookieJar instance to save cookie
-        cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
-        opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
+       
         try:
-            #access main page, and save attributes to the cookie
-            result = opener.open(self.MAIN_PAGE_URL)
-             #save cookie
-            cookie.save(ignore_discard=True, ignore_expires=True)
+            if not os.path.exists(self.COOKIE_PATH):  #if cookie is not exist
+                #claim a MozillaCookieJar instance to save cookie
+                cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
+                opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
+                #access main page, and save attributes to the cookie
+                opener.open(self.MAIN_PAGE_URL)
+                #save cookie
+                cookie.save(ignore_discard=True, ignore_expires=True)
         except Exception, err:
             print err
         
@@ -52,14 +56,21 @@ class WebPageSpider(object):
         @return: real pdf url
         '''
         sReturn=None
-        if pdfUrl:
-            #claim a MozillaCookieJar instance to save cookie
-            cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
-            opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
-            #access pdfUrl
-            result = opener.open(pdfUrl)
-            soup = BeautifulSoup(result,features='lxml')
-            sReturn=soup.iframe.attrs.get('src')  #get real pdf url
+        try:
+            if pdfUrl:
+#                 pt=PrintTool()
+                
+                #claim a MozillaCookieJar instance to save cookie
+                cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
+                opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
+                #access pdfUrl
+#                 pt.printStartMessage('get real pdf url from the internet')
+                result = opener.open(pdfUrl)
+#                 pt.printEndMessage('get real pdf url from the internet')
+                soup = BeautifulSoup(result,features='lxml')
+                sReturn=soup.iframe.attrs.get('src')  #get real pdf url
+        except Exception, err:
+            print err
         return sReturn
 #            
     def getPdfFile(self,pdfRealUrl,filePath):

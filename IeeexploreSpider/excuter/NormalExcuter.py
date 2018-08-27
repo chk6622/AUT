@@ -11,7 +11,7 @@ from dao.MongoDBDAO import MongoDBDAO
 from utiles.PrintTool import PrintTool
 
 if __name__ == '__main__':
-    keyWords='swarm'
+    keyWords=['swarm']
     pt=PrintTool()
     pt.printStartMessage('initiate')
     apiSpider=IeeeApiSpider()
@@ -19,36 +19,43 @@ if __name__ == '__main__':
     mongoDBDAO=MongoDBDAO()
     pt.printEndMessage('initiate')
     pt.printStartMessage('processes')
-    while apiSpider.CUR_QUERY_COUNT<apiSpider.MAX_QUERY_COUNT_LIMIT:
-        pt.printStartMessage('query articles by keywords:'+keyWords)
-        results=apiSpider.queryData(keyWords)
-        pt.printEndMessage('query articles by keywords:'+keyWords)
+    for keyWord in keyWords:
+        print '------------------------------------------------------------'
+        pt.printStartMessage('query articles by keywords:'+keyWord)
+        results=apiSpider.queryData(keyWord)
+        pt.printEndMessage('query articles by keywords:'+keyWord)
         if not results or len(results)==0:
             print 'Results number is 0'
             break
         pt.printStartMessage('processes result set')
-        resultNum=1
+        resultNum=0
         for result in results:
-            pt.printStartMessage('processes result:'+resultNum)
+            print '----------------------------%d--------------------------------' % resultNum
+            resultNum+=1
+            pt.printStartMessage('processes result:')
             pt.printStartMessage('gets pdf url')
             pdfUrl=apiSpider.getPdfUrl(result)
+#             print pdfUrl
             pdfRealUrl=webPageSpider.getRealPdfUrl(pdfUrl)
+#             print pdfRealUrl
             pt.printEndMessage('gets pdf url')
             pt.printStartMessage('gets pdf file')
-            fileName=result['filename']
+            fileName=result.get('article_number')+'.pdf'
             fileTempPath=webPageSpider.generateTempFilePath(fileName)
             fileId=''
             flag=webPageSpider.getPdfFile(pdfRealUrl, fileTempPath)
             pt.printEndMessage('gets pdf file')
             if flag:  #if get pdf file success then save the file into the database
                 pt.printStartMessage('inserts pdf file into the database')
-                fileId=mongoDBDAO.insertFile(fileTempPath, fileName)
+                fileId=mongoDBDAO.insertFile(fileTempPath, fileName, isDelFile=True)
                 pt.printEndMessage('inserts pdf file into the database')
             pt.printStartMessage('inserts articles into the database')
             result['fileId']=fileId  #set fileId in the result
             mongoDBDAO.insertOneData(**result)  #save a result into the database
             pt.printEndMessage('inserts articles into the database')
-            pt.printEndMessage('processes result:'+resultNum)
+            pt.printEndMessage('processes result:')
+            print '---------------------------%d---------------------------------' % resultNum
         pt.printEndMessage('processes result set')
+        print '-------------------------------------------------------------'
     pt.printEndMessage('processes')
     
