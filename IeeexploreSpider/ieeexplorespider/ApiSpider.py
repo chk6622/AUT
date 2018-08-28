@@ -7,6 +7,7 @@ Created on Aug 24, 2018
 '''
 
 from xploreapi import XPLORE
+from logger.logConfig import appLogger
 import json
 
 
@@ -22,17 +23,30 @@ class IeeeApiSpider(object):
     MAX_QUERY_COUNT_LIMIT=2
     TOTAL_MAX_RESULTS=0
     CUR_QUERY_COUNT=0  #current query count
+    QUERY_BEGIN_YEAR=None
+    QUERY_END_YEAR=None
     
-    def __init__(self,apiKEY=None,queryReturnMaxResult=0,maxQueryCountLimit=0):
+    def __init__(self,apiKEY=None,queryReturnMaxResult=0,maxQueryCountLimit=0,queryBeginYear=None,queryEndYear=None):
         if apiKEY:
             self.API_KEY=apiKEY
         if queryReturnMaxResult:
             self.QUERY_RETURN_MAX_RESULTS=queryReturnMaxResult
         if maxQueryCountLimit:
             self.MAX_QUERY_COUNT_LIMIT=maxQueryCountLimit
+        if queryBeginYear:
+            self.QUERY_BEGIN_YEAR=queryBeginYear
+        if queryEndYear:
+            self.QUERY_END_YEAR=queryEndYear
         self.TOTAL_MAX_RESULTS=self.MAX_QUERY_COUNT_LIMIT*self.QUERY_RETURN_MAX_RESULTS
     
-    def queryData(self, keyWords):
+    def getQueryInfo(self, keyWord=''):
+        '''
+        get query info
+        '''
+        sReturn='key word: %s ; query begin year: %s ; query end year: %s ; content_type: Journals ; open access: True' % (keyWord,self.QUERY_BEGIN_YEAR,self.QUERY_END_YEAR)
+        return sReturn
+    
+    def queryData(self, keyWords=''):
         '''
         query ieee xplore database to get results
         @param keyWords: key words
@@ -45,9 +59,18 @@ class IeeeApiSpider(object):
             query=XPLORE(self.API_KEY)
             query.maximumResults(self.QUERY_RETURN_MAX_RESULTS)
             query.queryText(keyWords)
+            query.resultsSorting('publication_year','desc')
+            query.resultsFilter('content_type','Journals')  #only query journals
+            query.resultsFilter('open_access','True')  #only query the articles which is open access
+            if self.QUERY_BEGIN_YEAR:
+                query.resultsFilter('start_year',self.QUERY_BEGIN_YEAR)
+            if self.QUERY_END_YEAR:
+                query.resultsFilter('end_year', self.QUERY_END_YEAR) 
+            appLogger.info(self.getQueryInfo(keyWords))
             while True:
                 query.startingResult(begin)
                 results = query.callAPI(debugModeOff=True)
+                print results
                 self.CUR_QUERY_COUNT+=1
                 articles=self.getArticles(results)  #get articles list
                 if articles:
@@ -60,7 +83,7 @@ class IeeeApiSpider(object):
                 else:
                     break
         except Exception, err:
-            print err
+            appLogger.error(err)
         return lReturn
     
     def getArticles(self, jsonResponse):
@@ -76,7 +99,7 @@ class IeeeApiSpider(object):
                 if jdatas:
                     pReturn=jdatas.get('articles')
         except Exception, err:
-            print err
+            appLogger.error(err)
         return pReturn
     
     def getPdfUrl(self, jsonResult):
@@ -90,7 +113,7 @@ class IeeeApiSpider(object):
             if jsonResult:
                 uReturn=jsonResult['pdf_url']
         except Exception,err:
-            print err
+            appLogger.error(err)
         return uReturn
 
     

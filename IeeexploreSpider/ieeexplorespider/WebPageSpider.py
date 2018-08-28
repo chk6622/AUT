@@ -13,6 +13,7 @@ import requests
 import cookielib
 import os
 from utiles.PrintTool import PrintTool
+from logger.logConfig import appLogger
 
 class WebPageSpider(object):
     
@@ -38,7 +39,7 @@ class WebPageSpider(object):
                 #save cookie
                 cookie.save(ignore_discard=True, ignore_expires=True)
         except Exception, err:
-            print err
+            appLogger.error(err)
         
     def generateTempFilePath(self,fileName):
         '''
@@ -72,7 +73,7 @@ class WebPageSpider(object):
                 soup = BeautifulSoup(result,features='lxml')
                 sReturn=soup.iframe.attrs.get('src')  #get real pdf url
         except Exception, err:
-            print err
+            appLogger.error(err)
         return sReturn
 #            
     def getPdfFile(self,pdfRealUrl,filePath):
@@ -90,9 +91,10 @@ class WebPageSpider(object):
             for chunk in response.iter_content(chunk_size=512):
                 if chunk:
                     f.write(chunk)
+            appLogger.info('success get file from the internet. the file size is %s bytes' % os.path.getsize(filePath))
             bReturn=True
         except Exception, err:
-            print err
+            appLogger.error(err)
         finally:
             if f:
                 f.close()
@@ -100,10 +102,11 @@ class WebPageSpider(object):
 
 
 if __name__ == '__main__':
-    spider=WebPageSpider()
+    print os.path.getsize('../temp/8359016.pdf')
+#     spider=WebPageSpider()
 #     realUrl=spider.getRealPdfUrl(r'https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6931434')
-    pdfUrl='https://ieeexplore.ieee.org/ielx5/74/5723204/05723276.pdf?tp=&arnumber=5723276&isnumber=5723204'
-    print spider.getPdfFile(pdfUrl,'../temp/test.pdf')
+#     pdfUrl='https://ieeexplore.ieee.org/ielx5/74/5723204/05723276.pdf?tp=&arnumber=5723276&isnumber=5723204'
+#     print spider.getPdfFile(pdfUrl,'../temp/test.pdf')
     
 #     print spider.getRealPdfUrl(r'https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5723276')
     

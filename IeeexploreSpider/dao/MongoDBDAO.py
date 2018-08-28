@@ -14,6 +14,7 @@ from cStringIO import StringIO
 import types 
 from hamcrest.core.core.isnone import none
 from bson.objectid import ObjectId
+from logger.logConfig import appLogger
 import os
 
 class MongoDBDAO:
@@ -69,7 +70,7 @@ class MongoDBDAO:
                 if databaseName in databaseNames:   
                     return client[databaseName]
             except Exception, err:
-                print err
+                appLogger.error(err)
         return None
     
     def getCollection(self, collectionName):
@@ -82,7 +83,7 @@ class MongoDBDAO:
             try:
                 return self.DB_CLIENT[collectionName]
             except Exception, err:
-                print err
+                appLogger.error(err)
         return None
             
     def insertOneData(self, collectionName=DB_COLL, **dataSet):
@@ -101,7 +102,7 @@ class MongoDBDAO:
                     if resultObject:
                         sReturn=resultObject.inserted_id
         except Exception, err:
-            print err
+            appLogger.error(err)
         return sReturn
         
     def insertFile(self, filePath, saveFilename, collectionName=DB_COLL_BIN, isDelFile=False):
@@ -122,13 +123,13 @@ class MongoDBDAO:
                     sReturn=self.insertBinaryData(content.getvalue(), saveFilename, collectionName)
             
         except Exception, err:
-            print err
+            appLogger.error(err)
         finally:
             if isDelFile:
                 try:
                     os.remove(filePath)
                 except Exception, err:
-                    print err
+                    appLogger.error(err)
         return sReturn
 
                     
@@ -147,7 +148,7 @@ class MongoDBDAO:
                 if coll:
                     sReturn = coll.save(dict(content= bson.binary.Binary(binaryData),filename = saveFilename))
         except Exception, err:
-            print err
+            appLogger.error(err)
         return sReturn
             
 
@@ -166,7 +167,7 @@ class MongoDBDAO:
                 if data:
                     dReturn=data['content']
         except Exception, err:
-            print err
+            appLogger.error(err)
         return dReturn
 #             if data:
 #                 if savePath:

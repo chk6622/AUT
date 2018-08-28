@@ -7,6 +7,7 @@ Created on Aug 27, 2018
 '''
 
 import time
+from logger.logConfig import appLogger
 
 class PrintTool(object):
     '''
@@ -30,7 +31,7 @@ class PrintTool(object):
                 self.timeMap[message]= timeArray
             sReturn='Beginning: %-s...' %message
             timeArray.append(self.getCurTime())
-        print sReturn
+        appLogger.info(sReturn) 
         
     def printEndMessage(self,message):
         sReturn='Finishing: '
@@ -41,7 +42,7 @@ class PrintTool(object):
             timeArray.append(self.getCurTime())
 #             periodArray=self.periodMap.get(message)
             sReturn='Finishing: %-50s spending: %6d ms, max: %6d ms, min: %6d ms, avg: %6d ms' % (message,self.getPeriod(message),max(self.periodMap.get(message)),min(self.periodMap.get(message)),self.getAvg(self.periodMap.get(message)))
-        print sReturn
+        appLogger.info(sReturn)
         
     def getCurTime(self):
         return int(round(time.time() * 1000))
@@ -55,7 +56,7 @@ class PrintTool(object):
                     total+=item
                 avg=total/len(array)
         except Exception, err:
-            print err
+            appLogger.error(err)
         return avg
     
     def getPeriod(self,message):
@@ -70,7 +71,7 @@ class PrintTool(object):
                 dReturn=timeArray[-1]-timeArray[-2]
                 periodArray.append(dReturn)
         except Exception, err:
-            print err
+            appLogger.error(err)
         return dReturn
     
 #     def getMaxPeriod(self,message):

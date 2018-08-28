@@ -10,6 +10,7 @@ from ieeexplorespider.WebPageSpider import WebPageSpider
 from dao.MongoDBDAO import MongoDBDAO
 from utiles.PrintTool import PrintTool
 from ConfigParser import ConfigParser
+from logger.logConfig import appLogger
 
 def getDatabase(appConfig):
     dbName=appConfig.get('DB', 'DB_NAME')
@@ -31,7 +32,9 @@ def getApiSpider(appConfig):
     apiKey=appConfig.get('ApiSpider','API_KEY')
     queryReturnMaxResult=appConfig.getint('ApiSpider','QUERY_RETURN_MAX_RESULTS')
     maxQueryCountLimit=appConfig.getint('ApiSpider','MAX_QUERY_COUNT_LIMIT')
-    return IeeeApiSpider(apiKey,queryReturnMaxResult,maxQueryCountLimit)
+    queryBeginYear=appConfig.get('ApiSpider','QUERY_BEGIN_YEAR')
+    queryEndYear=appConfig.get('ApiSpider','QUERY_END_YEAR')
+    return IeeeApiSpider(apiKey,queryReturnMaxResult,maxQueryCountLimit,queryBeginYear,queryEndYear)
 
 def getKeywords(appConfig):
     aReturn=None
@@ -41,12 +44,14 @@ def getKeywords(appConfig):
     return aReturn
 
 if __name__ == '__main__':
+    pt=PrintTool()
+    pt.printStartMessage('Ieee xplore spider')
     #initialize app
-    configFilePath='../config.txt'
+    configFilePath='../config.conf'
     cf = ConfigParser()
     cf.read(configFilePath)
     keyWords=getKeywords(cf)
-    pt=PrintTool()
+    
     pt.printStartMessage('initiate')
     apiSpider=getApiSpider(cf)
     webPageSpider=getWebPageSipder(cf)
@@ -56,7 +61,7 @@ if __name__ == '__main__':
     pt.printEndMessage('initiate')
     pt.printStartMessage('processes')
     for keyWord in keyWords:
-        print '------------------------------------------------------------'
+        appLogger.info('------------------------------------------------------------')
         pt.printStartMessage('query articles by keywords:'+keyWord)
         results=apiSpider.queryData(keyWord)
         pt.printEndMessage('query articles by keywords:'+keyWord)
@@ -68,7 +73,7 @@ if __name__ == '__main__':
         pt.printStartMessage('processes result set')
         resultNum=0
         for result in results:
-            print '----------------------------%d--------------------------------' % resultNum
+            appLogger.info('----------------------------%d--------------------------------' % resultNum)
             resultNum+=1
             pt.printStartMessage('processes result:')
             pt.printStartMessage('gets pdf url')
@@ -92,8 +97,9 @@ if __name__ == '__main__':
             mongoDBDAO.insertOneData(**result)  #save a result into the database
             pt.printEndMessage('inserts articles into the database')
             pt.printEndMessage('processes result:')
-            print '---------------------------%d---------------------------------' % resultNum
+            appLogger.info('----------------------------%d--------------------------------' % resultNum)
         pt.printEndMessage('processes result set')
-        print '-------------------------------------------------------------'
+        appLogger.info('-------------------------------------------------------------')
     pt.printEndMessage('processes')
+    pt.printEndMessage('Ieee xplore spider')
     
