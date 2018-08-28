@@ -8,6 +8,9 @@ Created on Aug 27, 2018
 
 import time
 from logger.logConfig import appLogger
+import threading
+
+queueLock = threading.Lock()
 
 class PrintTool(object):
     '''
@@ -23,6 +26,7 @@ class PrintTool(object):
         '''
         
     def printStartMessage(self,message):
+        queueLock.acquire()
         sReturn='Beginning: '
         if message:
             timeArray=self.timeMap.get(message)
@@ -31,9 +35,11 @@ class PrintTool(object):
                 self.timeMap[message]= timeArray
             sReturn='Beginning: %-s...' %message
             timeArray.append(self.getCurTime())
-        appLogger.info(sReturn) 
+        appLogger.info(sReturn)
+        queueLock.release()
         
     def printEndMessage(self,message):
+        queueLock.acquire()
         sReturn='Finishing: '
         if message:
             timeArray=self.timeMap.get(message)
@@ -43,6 +49,7 @@ class PrintTool(object):
 #             periodArray=self.periodMap.get(message)
             sReturn='Finishing: %-50s spending: %6d ms, max: %6d ms, min: %6d ms, avg: %6d ms' % (message,self.getPeriod(message),max(self.periodMap.get(message)),min(self.periodMap.get(message)),self.getAvg(self.periodMap.get(message)))
         appLogger.info(sReturn)
+        queueLock.release()
         
     def getCurTime(self):
         return int(round(time.time() * 1000))

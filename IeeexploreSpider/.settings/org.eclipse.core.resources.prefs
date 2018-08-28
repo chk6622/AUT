@@ -1,8 +1,10 @@
 eclipse.preferences.version=1
 encoding//dao/MongoDBDAO.py=utf-8
 encoding//excuter/NormalExcuter.py=utf-8
+encoding//excuter/NormalMulitThreadExcuter.py=utf-8
 encoding//ieeexplorespider/ApiSpider.py=utf-8
 encoding//ieeexplorespider/WebPageSpider.py=utf-8
 encoding//logger/logConfig.py=utf-8
+encoding//normalthread/NormalThread.py=utf-8
 encoding//utiles/PrintTool.py=utf-8
 encoding/<project>=UTF-8

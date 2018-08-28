@@ -14,6 +14,10 @@ import cookielib
 import os
 from utiles.PrintTool import PrintTool
 from logger.logConfig import appLogger
+import threading
+import time
+
+queueLock = threading.Lock()
 
 class WebPageSpider(object):
     
@@ -59,21 +63,28 @@ class WebPageSpider(object):
         @return: real pdf url
         '''
         sReturn=None
+#         queueLock.acquire()
         try:
             if pdfUrl:
-#                 pt=PrintTool()
                 
                 #claim a MozillaCookieJar instance to save cookie
                 cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
                 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
                 #access pdfUrl
 #                 pt.printStartMessage('get real pdf url from the internet')
+                
                 result = opener.open(pdfUrl)
+                #save cookie
+                
+                cookie.save(ignore_discard=True, ignore_expires=True)
+                
 #                 pt.printEndMessage('get real pdf url from the internet')
                 soup = BeautifulSoup(result,features='lxml')
+                appLogger.info(pdfUrl)
                 sReturn=soup.iframe.attrs.get('src')  #get real pdf url
         except Exception, err:
             appLogger.error(err)
+#         queueLock.release()
         return sReturn
 #            
     def getPdfFile(self,pdfRealUrl,filePath):
@@ -86,13 +97,17 @@ class WebPageSpider(object):
         bReturn=False
         f=None
         try:
-            response = requests.get(pdfRealUrl, stream=True)
-            f = open(filePath, "wb")
-            for chunk in response.iter_content(chunk_size=512):
-                if chunk:
-                    f.write(chunk)
-            appLogger.info('success get file from the internet. the file size is %s bytes' % os.path.getsize(filePath))
-            bReturn=True
+            if pdfRealUrl:
+                response = requests.get(pdfRealUrl, stream=True)
+                f = open(filePath, "wb")
+                for chunk in response.iter_content(chunk_size=5120):
+                    if chunk:
+                        f.write(chunk)
+                appLogger.info('success get file from the internet. the file size is %s bytes' % os.path.getsize(filePath))
+                bReturn=True
+            else:
+                print 'sleep 3 second...'
+                time.sleep(3)   #if we can not get real pdf url, thread will sleep 3000 ms in order to simulate the time to download the file 
         except Exception, err:
             appLogger.error(err)
         finally:

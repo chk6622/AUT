@@ -1,16 +1,22 @@
 #!/usr/bin/env python
 #coding: utf-8
 '''
-Created on Aug 26, 2018
+Created on Aug 28, 2018
 
 @author: xingtong
 '''
+
 from ieeexplorespider.ApiSpider import IeeeApiSpider
 from ieeexplorespider.WebPageSpider import WebPageSpider
 from dao.MongoDBDAO import MongoDBDAO
 from utiles.PrintTool import PrintTool
 from ConfigParser import ConfigParser
 from logger.logConfig import appLogger
+from Queue import Queue
+from normalthread.NormalThread import NormalThread
+import threading
+import thread
+import time
 
 def getDatabase(appConfig):
     dbName=appConfig.get('DB', 'DB_NAME')
@@ -43,6 +49,23 @@ def getKeywords(appConfig):
         aReturn=keyWords.split(',')
     return aReturn
 
+def isThreadAlive(threadArray):
+    '''
+    if any thread in the threadArray is alive
+    @param threadArray: a array which contains thread obj
+    @return: if any thread in the threadArray is alive than return true,or return false
+    '''
+    bReturn=False
+    if threadArray:
+        for t in threadArray:
+            if t.isAlive():
+                bReturn=True
+                break
+    return bReturn
+
+
+    
+
 if __name__ == '__main__':
     pt=PrintTool()
     pt.printStartMessage('Ieee xplore spider')
@@ -60,6 +83,7 @@ if __name__ == '__main__':
     #
     pt.printEndMessage('initiate')
     pt.printStartMessage('processes')
+    taskQueue=Queue()  
     for keyWord in keyWords:
         appLogger.info('------------------------------------------------------------')
         pt.printStartMessage('query articles by keywords:'+keyWord)
@@ -70,41 +94,53 @@ if __name__ == '__main__':
             break
         else:
             print 'Results number is %d' % len(results)
+            for result in results:
+                taskQueue.put(result)
+        
         pt.printStartMessage('processes result set')
-        resultNum=0
-        for result in results:
-            appLogger.info('----------------------------%d--------------------------------' % resultNum)
-            resultNum+=1
-            pt.printStartMessage('processes result:')
-            pt.printStartMessage('gets pdf url')
-            pdfUrl=apiSpider.getPdfUrl(result)
-#             print pdfUrl
-            pdfRealUrl=webPageSpider.getRealPdfUrl(pdfUrl)
-#             print pdfRealUrl
-            pt.printEndMessage('gets pdf url')
-            pt.printStartMessage('gets pdf file')
-            if pdfRealUrl:            #if real file not exist then use simulated file
-                fileName=result.get('article_number')+'.pdf'
+        threadArray=[]
+        for i in range(100):
+            nt=NormalThread(taskQueue,apiSpider,webPageSpider,mongoDBDAO,pt)
+            threadArray.append(nt)
+            nt.start()
+        while True:
+            if isThreadAlive(threadArray):
+                time.sleep(1)
             else:
-                fileName='simulated file.pdf'
-            fileTempPath=webPageSpider.generateTempFilePath(fileName)
-            fileId=''
-            flag=webPageSpider.getPdfFile(pdfRealUrl, fileTempPath)
-            pt.printEndMessage('gets pdf file')
-            pt.printStartMessage('inserts pdf file into the database')
-            if flag:  #if get pdf file success then save the file into the database
-                fileId=mongoDBDAO.insertFile(fileTempPath, fileName, isDelFile=True)
-            else:
-                fileId=mongoDBDAO.insertFile(fileTempPath, fileName, isDelFile=False)
-            pt.printEndMessage('inserts pdf file into the database')
-            pt.printStartMessage('inserts articles into the database')
-            result['fileId']=fileId  #set fileId in the result
-            mongoDBDAO.insertOneData(**result)  #save a result into the database
-            pt.printEndMessage('inserts articles into the database')
-            pt.printEndMessage('processes result:')
-            appLogger.info('----------------------------%d--------------------------------' % resultNum)
+                break
         pt.printEndMessage('processes result set')
-        appLogger.info('-------------------------------------------------------------')
-    pt.printEndMessage('processes')
-    pt.printEndMessage('Ieee xplore spider')
-    
+    pt.printEndMessage('Ieee xplore spider')    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
