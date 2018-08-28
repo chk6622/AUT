@@ -23,11 +23,13 @@ class IeeeApiSpider(object):
     TOTAL_MAX_RESULTS=0
     CUR_QUERY_COUNT=0  #current query count
     
-    def __init__(self,apiKEY=None,queryReturnMaxResult=None):
+    def __init__(self,apiKEY=None,queryReturnMaxResult=0,maxQueryCountLimit=0):
         if apiKEY:
             self.API_KEY=apiKEY
         if queryReturnMaxResult:
             self.QUERY_RETURN_MAX_RESULTS=queryReturnMaxResult
+        if maxQueryCountLimit:
+            self.MAX_QUERY_COUNT_LIMIT=maxQueryCountLimit
         self.TOTAL_MAX_RESULTS=self.MAX_QUERY_COUNT_LIMIT*self.QUERY_RETURN_MAX_RESULTS
     
     def queryData(self, keyWords):

@@ -27,13 +27,23 @@ class MongoDBDAO:
     DB_COLL='test_colle'  # the collection which stores normal data
     DB_COLL_BIN='test_bin_colle'  # the collection which stores binary data
     
-    def __init__(self, databaseName='test1', coll=None, binColl=None):
+    def __init__(self, dbName=None, dbHost=None, dbPort=None, dbUser=None, dbPass=None, dbColl=None, dbBinColl=None):
         self.initUrl()
-        self.DB_CLIENT=self.getDatabase(databaseName)
-        if coll:  #init normal collection
-            self.DB_COLL=coll
-        if binColl:  #init data collection
-            self.DB_COLL_BIN=binColl
+        self.DB_CLIENT=self.getDatabase(dbName)
+        if dbName:
+            self.DB_NAME=dbName
+        if dbHost:
+            self.DB_HOST=dbHost
+        if dbPort:
+            self.DB_PORT=dbPort
+        if dbUser:
+            self.DB_USER=dbUser
+        if dbPass:
+            self.DB_PASS=dbPass
+        if dbColl:  #init normal collection
+            self.DB_COLL=dbColl
+        if dbBinColl:  #init data collection
+            self.DB_COLL_BIN=dbBinColl
         
     def initUrl(self):
         '''

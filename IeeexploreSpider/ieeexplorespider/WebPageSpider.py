@@ -20,11 +20,13 @@ class WebPageSpider(object):
     COOKIE_PATH=r'../temp/cookie.txt'
     TEMP_DOC_PATH=r'../temp/'
     
-    def __init__(self,mainPageUrl=None,cookiePath=None):
+    def __init__(self,mainPageUrl=None,cookiePath=None,tempDocPath=None):
         if mainPageUrl:
             self.MAIN_PAGE_URL=mainPageUrl
         if cookiePath:
             self.COOKIE_PATH=cookiePath
+        if tempDocPath:
+            self.TEMP_DOC_PATH=tempDocPath
        
         try:
             if not os.path.exists(self.COOKIE_PATH):  #if cookie is not exist

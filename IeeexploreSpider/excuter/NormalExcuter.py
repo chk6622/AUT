@@ -9,14 +9,50 @@ from ieeexplorespider.ApiSpider import IeeeApiSpider
 from ieeexplorespider.WebPageSpider import WebPageSpider
 from dao.MongoDBDAO import MongoDBDAO
 from utiles.PrintTool import PrintTool
+from ConfigParser import ConfigParser
+
+def getDatabase(appConfig):
+    dbName=appConfig.get('DB', 'DB_NAME')
+    dbHost=appConfig.get('DB', 'DB_HOST')
+    dbPort=appConfig.get('DB', 'DB_PORT')
+    dbUser=appConfig.get('DB', 'DB_USER')
+    dbPass=appConfig.get('DB', 'DB_PASS')
+    dbColl=appConfig.get('DB', 'DB_COLL')
+    dbBinColl=appConfig.get('DB', 'DB_COLL_BIN')
+    return MongoDBDAO(dbName,dbHost,dbPort,dbUser,dbPass,dbColl,dbBinColl)
+
+def getWebPageSipder(appConfig):
+    mainPageUrl=appConfig.get('WebPageSpider','MAIN_PAGE_URL')
+    cookiePath=appConfig.get('WebPageSpider','COOKIE_PATH')
+    tempDocPath=appConfig.get('WebPageSpider','TEMP_DOC_PATH')
+    return WebPageSpider(mainPageUrl,cookiePath,tempDocPath)
+
+def getApiSpider(appConfig):
+    apiKey=appConfig.get('ApiSpider','API_KEY')
+    queryReturnMaxResult=appConfig.getint('ApiSpider','QUERY_RETURN_MAX_RESULTS')
+    maxQueryCountLimit=appConfig.getint('ApiSpider','MAX_QUERY_COUNT_LIMIT')
+    return IeeeApiSpider(apiKey,queryReturnMaxResult,maxQueryCountLimit)
+
+def getKeywords(appConfig):
+    aReturn=None
+    keyWords=appConfig.get('KayWords','KEY_WORDS')
+    if keyWords:
+        aReturn=keyWords.split(',')
+    return aReturn
 
 if __name__ == '__main__':
-    keyWords=['swarm']
+    #initialize app
+    configFilePath='../config.txt'
+    cf = ConfigParser()
+    cf.read(configFilePath)
+    keyWords=getKeywords(cf)
     pt=PrintTool()
     pt.printStartMessage('initiate')
-    apiSpider=IeeeApiSpider()
-    webPageSpider=WebPageSpider()
-    mongoDBDAO=MongoDBDAO()
+    apiSpider=getApiSpider(cf)
+    webPageSpider=getWebPageSipder(cf)
+    mongoDBDAO=getDatabase(cf)
+    
+    #
     pt.printEndMessage('initiate')
     pt.printStartMessage('processes')
     for keyWord in keyWords:
@@ -27,6 +63,8 @@ if __name__ == '__main__':
         if not results or len(results)==0:
             print 'Results number is 0'
             break
+        else:
+            print 'Results number is %d' % len(results)
         pt.printStartMessage('processes result set')
         resultNum=0
         for result in results:
