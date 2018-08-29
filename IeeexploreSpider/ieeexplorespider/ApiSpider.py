@@ -7,7 +7,7 @@ Created on Aug 24, 2018
 '''
 
 from xploreapi import XPLORE
-from logger.logConfig import appLogger
+from logger.LogConfig import appLogger
 import json
 
 

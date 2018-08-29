@@ -10,7 +10,7 @@ from ieeexplorespider.WebPageSpider import WebPageSpider
 from dao.MongoDBDAO import MongoDBDAO
 from utiles.PrintTool import PrintTool
 from ConfigParser import ConfigParser
-from logger.logConfig import appLogger
+from logger.LogConfig import appLogger
 
 def getDatabase(appConfig):
     dbName=appConfig.get('DB', 'DB_NAME')

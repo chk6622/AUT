@@ -13,7 +13,7 @@ import requests
 import cookielib
 import os
 from utiles.PrintTool import PrintTool
-from logger.logConfig import appLogger
+from logger.LogConfig import appLogger
 import threading
 import time
 
@@ -63,7 +63,7 @@ class WebPageSpider(object):
         @return: real pdf url
         '''
         sReturn=None
-#         queueLock.acquire()
+        queueLock.acquire()
         try:
             if pdfUrl:
                 
@@ -72,19 +72,27 @@ class WebPageSpider(object):
                 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
                 #access pdfUrl
 #                 pt.printStartMessage('get real pdf url from the internet')
-                
-                result = opener.open(pdfUrl)
-                #save cookie
-                
-                cookie.save(ignore_discard=True, ignore_expires=True)
-                
-#                 pt.printEndMessage('get real pdf url from the internet')
-                soup = BeautifulSoup(result,features='lxml')
-                appLogger.info(pdfUrl)
-                sReturn=soup.iframe.attrs.get('src')  #get real pdf url
+                loop=0
+                while True:
+                    if loop>=20:
+                        appLogger.error('loop 10 times, but we still cannot get real pdf url')
+                        break
+                    loop+=1
+                    result = opener.open(pdfUrl)
+                    #save cookie               
+#                     cookie.save(ignore_discard=True, ignore_expires=True)                   
+    #                 pt.printEndMessage('get real pdf url from the internet')
+                    soup = BeautifulSoup(result,features='lxml')
+                    appLogger.info(pdfUrl)
+                    if soup.iframe:
+                        sReturn=soup.iframe.attrs.get('src')  #get real pdf url
+                        break
+                    else:
+                        time.sleep(5)
         except Exception, err:
             appLogger.error(err)
-#         queueLock.release()
+            time.sleep(1)
+        queueLock.release()
         return sReturn
 #            
     def getPdfFile(self,pdfRealUrl,filePath):

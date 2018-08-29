@@ -7,7 +7,7 @@ Created on Aug 27, 2018
 '''
 
 import time
-from logger.logConfig import appLogger
+from logger.LogConfig import appLogger
 import threading
 
 queueLock = threading.Lock()

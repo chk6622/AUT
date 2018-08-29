@@ -11,7 +11,7 @@ from ieeexplorespider.WebPageSpider import WebPageSpider
 from dao.MongoDBDAO import MongoDBDAO
 from utiles.PrintTool import PrintTool
 from ConfigParser import ConfigParser
-from logger.logConfig import appLogger
+from logger.LogConfig import appLogger
 from Queue import Queue
 from normalthread.NormalThread import NormalThread
 import threading
@@ -49,6 +49,14 @@ def getKeywords(appConfig):
         aReturn=keyWords.split(',')
     return aReturn
 
+def getTHreadCount(appConfig):
+    tReturn=1
+    try:
+        tReturn=appConfig.getint('NormalMultithreading','THREAD_COUNT')
+    except Exception, err:
+        print err
+    return tReturn
+
 def isThreadAlive(threadArray):
     '''
     if any thread in the threadArray is alive
@@ -79,6 +87,7 @@ if __name__ == '__main__':
     apiSpider=getApiSpider(cf)
     webPageSpider=getWebPageSipder(cf)
     mongoDBDAO=getDatabase(cf)
+    threadCount=getTHreadCount(cf)
     
     #
     pt.printEndMessage('initiate')
@@ -99,7 +108,7 @@ if __name__ == '__main__':
         
         pt.printStartMessage('processes result set')
         threadArray=[]
-        for i in range(100):
+        for i in range(threadCount):
             nt=NormalThread(taskQueue,apiSpider,webPageSpider,mongoDBDAO,pt)
             threadArray.append(nt)
             nt.start()

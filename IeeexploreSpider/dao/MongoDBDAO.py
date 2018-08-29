@@ -14,7 +14,7 @@ from cStringIO import StringIO
 import types 
 from hamcrest.core.core.isnone import none
 from bson.objectid import ObjectId
-from logger.logConfig import appLogger
+from logger.LogConfig import appLogger
 import os
 
 class MongoDBDAO:
