@@ -11,6 +11,7 @@ from logger.StreamLogger import StreamLogger
 from model.StopSignal import StopSignal
 from logger.LogConfig import appLogger
 from ConfigParser import ConfigParser
+from model.StreamBox import StreamBox
 
 def getConfig():
     configFilePath='../config.conf'
@@ -43,7 +44,8 @@ class BaseProcessor(Thread):
                 
             beginTime=time.time()
             try:
-                processObj=self.process(processObj=processObj)
+                if processObj and isinstance(processObj,StreamBox):
+                    processObj=self.process(processObj=processObj)
             except Exception,e:
                 appLogger.error(e)
                 if processObj:

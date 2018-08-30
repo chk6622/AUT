@@ -1,36 +1,34 @@
 #!/usr/bin/env python
 #coding: utf-8
 '''
-Created on Aug 29, 2018
+Created on Aug 30, 2018
 
 @author: xingtong
 '''
 from baseprocessor.BaseProcessor import BaseProcessor
-from ieeexplorespider.ApiSpider import IeeeApiSpider
+from ieeexplorespider.WebPageSpider import WebPageSpider
+from bizprocessor.GetPdfUrlProcessor import GetPdfUrlProcessor
 
-def getApiSpider(appConfig):
-    apiKey=appConfig.get('ApiSpider','API_KEY')
-    queryReturnMaxResult=appConfig.getint('ApiSpider','QUERY_RETURN_MAX_RESULTS')
-    maxQueryCountLimit=appConfig.getint('ApiSpider','MAX_QUERY_COUNT_LIMIT')
-    queryBeginYear=appConfig.get('ApiSpider','QUERY_BEGIN_YEAR')
-    queryEndYear=appConfig.get('ApiSpider','QUERY_END_YEAR')
-    return IeeeApiSpider(apiKey,queryReturnMaxResult,maxQueryCountLimit,queryBeginYear,queryEndYear)
+def getWebPageSipder(appConfig):
+    mainPageUrl=appConfig.get('WebPageSpider','MAIN_PAGE_URL')
+    cookiePath=appConfig.get('WebPageSpider','COOKIE_PATH')
+    tempDocPath=appConfig.get('WebPageSpider','TEMP_DOC_PATH')
+    return WebPageSpider(mainPageUrl,cookiePath,tempDocPath)
 
-class GetPdfUrlProcessor(BaseProcessor):
+class GetRealPdfUrlProcessor(BaseProcessor):
     '''
-    this class is used to get pdf file's url
+    this class is used to get real pdf file's url
     '''
 
     def __init__(self,inputQueue=None,outputQueue=None):
-        super(GetPdfUrlProcessor,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
-        self.apiSpider=getApiSpider(self.appConfig)
+        super(GetRealPdfUrlProcessor,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
+        self.webSpider=getWebPageSipder(self.appConfig)
             
     def process(self,processObj=None):
-        
         if processObj:
-            pdfUrl=self.apiSpider.getPdfUrl(processObj.result)
-            print pdfUrl
-            processObj.pdfUrl=pdfUrl
+            realPdfUrl=self.webSpider.getRealPdfUrl(processObj.pdfUrl)
+            print realPdfUrl
+            processObj.realPdfUrl=realPdfUrl
         return processObj
 
 if __name__ == '__main__':
@@ -38,5 +36,7 @@ if __name__ == '__main__':
     processObj=GetPdfUrlProcessor()
     processObj.result=result[0]
     obj=GetPdfUrlProcessor()
-    obj.process(processObj)
-    print processObj.pdfUrl
+    processObj=obj.process(processObj)
+    realUrlObj=GetRealPdfUrlProcessor()
+    processObj=realUrlObj.process(processObj)
+    print processObj.realPdfUrl

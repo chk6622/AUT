@@ -16383,3 +16383,1332 @@
 2018-08-29 20:38:41,789;INFO;PrintTool.printEndMessage;Line:51;Message:Finishing: Ieee xplore spider                                 spending: 345071 ms, max: 345071 ms, min: 345071 ms, avg: 345071 ms
 2018-08-29 21:37:20,594;ERROR;ApiSpider.getPdfUrl;Line:116;Message:list indices must be integers, not str
 2018-08-29 21:38:03,279;ERROR;ApiSpider.getPdfUrl;Line:116;Message:list indices must be integers, not str
+2018-08-30 18:24:33,930;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:33,941;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:33,953;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:33,963;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:33,974;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:33,989;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,000;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,010;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,022;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,032;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,043;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,055;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,065;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,076;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,086;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,098;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,108;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,118;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,130;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,140;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,151;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,161;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,171;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,183;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,193;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,203;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,214;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,226;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,236;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,246;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,257;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,269;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,279;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,289;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,301;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,311;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,322;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,332;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,344;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,354;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,365;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,377;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,387;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,397;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,407;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,418;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,430;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,440;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,450;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,461;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,473;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,483;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,494;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,506;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,516;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,526;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,538;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,549;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,559;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,571;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,581;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,592;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,602;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,612;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,624;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,634;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,644;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,655;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,665;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,677;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,687;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,697;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,707;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,719;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,730;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,740;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,750;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,760;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,772;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,782;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,793;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,805;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,815;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,826;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,838;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,848;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,859;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,869;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,881;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,891;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,901;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,911;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,924;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,934;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,946;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,956;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,967;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,977;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,989;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:34,999;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,009;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,019;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,030;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,040;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,052;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,062;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,072;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,084;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,095;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,105;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,115;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,127;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,138;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,148;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,158;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,170;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,180;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,190;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,201;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,211;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,223;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,233;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,244;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,256;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,266;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,278;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,288;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,299;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,309;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,319;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,331;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,342;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,352;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,362;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,374;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,384;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,394;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,405;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,417;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,427;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,437;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,448;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,460;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,470;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,482;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,493;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,503;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,513;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,523;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,535;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,546;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,555;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,566;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,578;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,588;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,598;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,609;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,619;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,631;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,641;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,651;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,661;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,673;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,684;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,694;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,704;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,716;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,726;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,736;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,747;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,757;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,769;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,779;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,789;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,801;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,812;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,823;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,835;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,845;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,855;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,867;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,878;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,888;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,900;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,910;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,921;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,931;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,943;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,953;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,964;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,974;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,986;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:35,996;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,007;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,017;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,028;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,039;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,049;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,059;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,069;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,078;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,089;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,101;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,111;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,121;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,131;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,142;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,154;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,164;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,176;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,187;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,197;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,207;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,219;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,229;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,240;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,250;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,260;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,272;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,282;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,293;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,305;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,315;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,325;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,335;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,346;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,357;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,368;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,378;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,388;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,400;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,411;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,421;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,431;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,443;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,453;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,463;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,474;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,486;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,499;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,510;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,522;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,532;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,545;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,559;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,569;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,581;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,592;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:24:36,602;ERROR;IeeeDataProducer.process;Line:49;Message:global name 'apiSpider' is not defined
+2018-08-30 18:25:02,089;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:03,565;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:04,305;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:05,229;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:05,907;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:06,634;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:07,232;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:07,789;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:08,470;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:09,650;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:10,229;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:10,891;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:11,411;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:13,898;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:14,585;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:25:15,134;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:31,079;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:32,207;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:32,756;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:33,250;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:33,757;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:34,726;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:35,615;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:36,198;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:36,703;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:37,323;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:37,887;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:38,391;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:39,331;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:39,924;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:40,459;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:40,974;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:41,493;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:42,071;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:42,655;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:43,249;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:43,839;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:44,232;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:44,790;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:45,256;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:45,904;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:46,400;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:30:47,007;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:32:07,874;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:34:49,805;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:34:55,979;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:21,154;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:33,934;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:34,424;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:34,983;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:35,566;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:36,444;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:37,213;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:38,351;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:39,042;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:39,710;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:40,194;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:40,703;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:41,878;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:42,339;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:42,898;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:43,471;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:44,009;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:44,582;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:45,135;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:45,744;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:46,289;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:46,770;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:47,286;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:47,802;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:35:48,299;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:45:49,163;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:47:08,447;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:47:09,734;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 18:48:11,459;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 18:48:43,048;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 18:49:23,482;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 20:52:17,273;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 20:54:01,174;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 20:56:24,530;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 21:02:49,996;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+                        IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 21:05:17,619;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 21:13:08,874;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 21:13:08,986;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 21:13:10,454;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 21:13:10,460;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:13:08,总处理时间:1.58 s,处理数据总数:2条,平均处理速度:1.27 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.467s；最短耗时   0.000s；平均耗时   0.734s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.003s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.002s；最短耗时   0.001s；平均耗时   0.002s
+
+2018-08-30 21:13:10,460;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:13:08,总处理时间:1.58 s,处理数据总数:4条,平均处理速度:2.54 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.467s；最短耗时   0.000s；平均耗时   0.367s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.006s；最短耗时   0.003s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 21:13:10,460;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:13:08,总处理时间:1.58 s,处理数据总数:6条,平均处理速度:3.80 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.467s；最短耗时   0.000s；平均耗时   0.245s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.007s；最短耗时   0.003s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 21:13:10,460;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:13:08,总处理时间:1.58 s,处理数据总数:8条,平均处理速度:5.07 条/s,处理单条数据所消耗时间:0.007 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.467s；最短耗时   0.000s；平均耗时   0.183s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.007s；最长耗时   0.007s；最短耗时   0.003s；平均耗时   0.006s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 21:13:10,460;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:13:08,总处理时间:1.58 s,处理数据总数:10条,平均处理速度:6.34 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.467s；最短耗时   0.000s；平均耗时   0.147s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.007s；最短耗时   0.003s；平均耗时   0.006s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 21:14:23,782;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 21:14:23,898;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 21:14:29,983;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 21:14:29,986;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:14:23,总处理时间:6.19 s,处理数据总数:2条,平均处理速度:0.32 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   6.083s；最短耗时   0.000s；平均耗时   3.041s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.003s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 21:14:29,986;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:14:23,总处理时间:6.19 s,处理数据总数:4条,平均处理速度:0.65 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   6.083s；最短耗时   0.000s；平均耗时   1.521s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.003s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 21:14:29,986;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:14:23,总处理时间:6.19 s,处理数据总数:6条,平均处理速度:0.97 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   6.083s；最短耗时   0.000s；平均耗时   1.014s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.003s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 21:14:29,987;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:14:23,总处理时间:6.19 s,处理数据总数:8条,平均处理速度:1.29 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   6.083s；最短耗时   0.000s；平均耗时   0.760s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.003s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 21:14:29,987;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 21:14:23,总处理时间:6.19 s,处理数据总数:10条,平均处理速度:1.61 条/s,处理单条数据所消耗时间:0.005 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   6.083s；最短耗时   0.000s；平均耗时   0.608s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.003s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:15:58,157;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:15:59,292;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:16:00,742;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:16:00,753;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:15:58,总处理时间:2.59 s,处理数据总数:2条,平均处理速度:0.77 条/s,处理单条数据所消耗时间:0.007 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.450s；最短耗时   0.000s；平均耗时   0.725s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.006s；最短耗时   0.006s；平均耗时   0.006s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:16:00,753;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:15:58,总处理时间:2.59 s,处理数据总数:4条,平均处理速度:1.55 条/s,处理单条数据所消耗时间:0.007 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.450s；最短耗时   0.000s；平均耗时   0.363s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.007s；最长耗时   0.007s；最短耗时   0.006s；平均耗时   0.006s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:16:00,755;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:15:58,总处理时间:2.59 s,处理数据总数:6条,平均处理速度:2.32 条/s,处理单条数据所消耗时间:0.008 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.450s；最短耗时   0.000s；平均耗时   0.242s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.008s；最长耗时   0.008s；最短耗时   0.006s；平均耗时   0.007s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:16:00,755;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:15:58,总处理时间:2.59 s,处理数据总数:8条,平均处理速度:3.09 条/s,处理单条数据所消耗时间:0.010 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.450s；最短耗时   0.000s；平均耗时   0.181s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.010s；最长耗时   0.010s；最短耗时   0.006s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:16:00,755;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:15:58,总处理时间:2.59 s,处理数据总数:10条,平均处理速度:3.87 条/s,处理单条数据所消耗时间:0.011 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.450s；最短耗时   0.000s；平均耗时   0.145s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.011s；最长耗时   0.011s；最短耗时   0.006s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:18:30,831;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:18:30,944;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:18:32,796;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:18:32,802;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:18:32,805;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:18:32,805;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:18:32,806;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:18:32,808;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:18:30,总处理时间:1.97 s,处理数据总数:2条,平均处理速度:1.02 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.852s；最短耗时   0.000s；平均耗时   0.926s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.007s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:18:32,808;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:18:32,809;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:18:30,总处理时间:1.97 s,处理数据总数:4条,平均处理速度:2.03 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.852s；最短耗时   0.000s；平均耗时   0.463s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.007s；平均耗时   0.009s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:18:32,809;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:18:30,总处理时间:1.97 s,处理数据总数:6条,平均处理速度:3.05 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.852s；最短耗时   0.000s；平均耗时   0.309s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.007s；平均耗时   0.009s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:18:32,809;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:18:30,总处理时间:1.97 s,处理数据总数:8条,平均处理速度:4.06 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.852s；最短耗时   0.000s；平均耗时   0.231s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.007s；平均耗时   0.009s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:18:32,809;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:18:30,总处理时间:1.97 s,处理数据总数:10条,平均处理速度:5.07 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.852s；最短耗时   0.000s；平均耗时   0.185s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.007s；平均耗时   0.009s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:18:32,809;INFO;ProcessScheduler.execute;Line:91;Message:ProcessScheduler thread stop
+2018-08-30 22:18:32,809;INFO;ProcessScheduler.execute;Line:92;Message:the app stop
+2018-08-30 22:21:43,579;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:21:44,634;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:21:45,799;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:21:45,809;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:21:45,815;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:21:45,815;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:43,总处理时间:2.22 s,处理数据总数:2条,平均处理速度:0.90 条/s,处理单条数据所消耗时间:0.013 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.163s；最短耗时   0.000s；平均耗时   0.581s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.013s；最长耗时   0.013s；最短耗时   0.012s；平均耗时   0.013s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:45,815;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:43,总处理时间:2.22 s,处理数据总数:4条,平均处理速度:1.80 条/s,处理单条数据所消耗时间:0.015 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.163s；最短耗时   0.000s；平均耗时   0.291s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.015s；最长耗时   0.015s；最短耗时   0.012s；平均耗时   0.014s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:45,816;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:43,总处理时间:2.22 s,处理数据总数:6条,平均处理速度:2.70 条/s,处理单条数据所消耗时间:0.016 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.163s；最短耗时   0.000s；平均耗时   0.194s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.015s；最长耗时   0.016s；最短耗时   0.012s；平均耗时   0.014s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:45,815;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:21:45,816;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:43,总处理时间:2.22 s,处理数据总数:8条,平均处理速度:3.60 条/s,处理单条数据所消耗时间:0.015 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.163s；最短耗时   0.000s；平均耗时   0.145s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.015s；最长耗时   0.016s；最短耗时   0.012s；平均耗时   0.015s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:45,816;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:21:45,818;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:43,总处理时间:2.22 s,处理数据总数:10条,平均处理速度:4.50 条/s,处理单条数据所消耗时间:0.016 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.163s；最短耗时   0.000s；平均耗时   0.116s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.016s；最长耗时   0.016s；最短耗时   0.012s；平均耗时   0.015s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:45,818;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:21:45,818;INFO;ProcessScheduler.execute;Line:91;Message:ProcessScheduler thread stop
+2018-08-30 22:21:45,819;INFO;ProcessScheduler.execute;Line:92;Message:the app stop
+2018-08-30 22:21:58,836;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:21:58,970;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:21:59,614;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:21:59,615;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:21:59,615;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:21:59,617;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:58,总处理时间:0.77 s,处理数据总数:2条,平均处理速度:2.60 条/s,处理单条数据所消耗时间:0.002 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   0.643s；最短耗时   0.000s；平均耗时   0.322s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.002s；最短耗时   0.001s；平均耗时   0.001s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:59,618;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:58,总处理时间:0.77 s,处理数据总数:4条,平均处理速度:5.20 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   0.643s；最短耗时   0.000s；平均耗时   0.161s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.001s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:59,618;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:58,总处理时间:0.77 s,处理数据总数:6条,平均处理速度:7.80 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   0.643s；最短耗时   0.000s；平均耗时   0.107s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.001s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:59,618;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:58,总处理时间:0.77 s,处理数据总数:8条,平均处理速度:10.39 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   0.643s；最短耗时   0.000s；平均耗时   0.080s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:59,618;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:21:59,618;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:21:58,总处理时间:0.77 s,处理数据总数:10条,平均处理速度:12.99 条/s,处理单条数据所消耗时间:0.005 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   0.643s；最短耗时   0.000s；平均耗时   0.064s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.001s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:21:59,618;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:21:59,619;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:21:59,619;INFO;ProcessScheduler.execute;Line:91;Message:ProcessScheduler thread stop
+2018-08-30 22:21:59,619;INFO;ProcessScheduler.execute;Line:92;Message:the app stop
+2018-08-30 22:25:19,549;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:25:19,671;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:25:20,766;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:25:20,769;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:25:20,769;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:25:19,总处理时间:1.21 s,处理数据总数:2条,平均处理速度:1.66 条/s,处理单条数据所消耗时间:0.008 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.088s；最短耗时   0.000s；平均耗时   0.544s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.008s；最长耗时   0.008s；最短耗时   0.005s；平均耗时   0.007s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:25:20,770;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:25:19,总处理时间:1.21 s,处理数据总数:4条,平均处理速度:3.31 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.088s；最短耗时   0.000s；平均耗时   0.272s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.008s；最长耗时   0.009s；最短耗时   0.005s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:25:20,770;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:25:20,772;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:25:19,总处理时间:1.21 s,处理数据总数:6条,平均处理速度:4.96 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.088s；最短耗时   0.000s；平均耗时   0.181s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.005s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:25:20,773;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:25:19,总处理时间:1.21 s,处理数据总数:8条,平均处理速度:6.61 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.088s；最短耗时   0.000s；平均耗时   0.136s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.009s；最短耗时   0.005s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:25:20,773;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:25:20,773;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:25:19,总处理时间:1.21 s,处理数据总数:10条,平均处理速度:8.26 条/s,处理单条数据所消耗时间:0.008 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.088s；最短耗时   0.000s；平均耗时   0.109s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.008s；最长耗时   0.009s；最短耗时   0.005s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:25:20,773;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:25:20,773;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:25:20,773;INFO;ProcessScheduler.execute;Line:91;Message:ProcessScheduler thread stop
+2018-08-30 22:25:20,773;INFO;ProcessScheduler.execute;Line:92;Message:the app stop
+2018-08-30 22:26:50,674;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:26:50,779;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:26:51,979;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:26:51,980;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:26:51,982;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:26:50,总处理时间:1.30 s,处理数据总数:2条,平均处理速度:1.54 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.197s；最短耗时   0.000s；平均耗时   0.599s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:26:51,983;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:26:50,总处理时间:1.30 s,处理数据总数:4条,平均处理速度:3.08 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.197s；最短耗时   0.000s；平均耗时   0.299s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:26:51,983;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:26:51,983;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:26:50,总处理时间:1.30 s,处理数据总数:6条,平均处理速度:4.62 条/s,处理单条数据所消耗时间:0.005 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.197s；最短耗时   0.000s；平均耗时   0.200s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.002s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:26:51,983;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:26:50,总处理时间:1.30 s,处理数据总数:8条,平均处理速度:6.15 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.197s；最短耗时   0.000s；平均耗时   0.150s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.006s；最短耗时   0.002s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:26:51,983;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:26:51,984;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:26:50,总处理时间:1.30 s,处理数据总数:10条,平均处理速度:7.69 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.197s；最短耗时   0.000s；平均耗时   0.120s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.006s；最短耗时   0.002s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:26:51,984;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:26:51,984;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:26:51,984;INFO;ProcessScheduler.execute;Line:93;Message:ProcessScheduler thread stop
+2018-08-30 22:26:51,984;INFO;ProcessScheduler.execute;Line:94;Message:the app stop
+2018-08-30 22:27:22,382;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:27:22,496;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:27:23,871;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:27:23,871;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:27:23,872;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:27:23,874;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:27:23,874;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:27:23,875;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:27:23,875;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:27:22,总处理时间:1.48 s,处理数据总数:2条,平均处理速度:1.35 条/s,处理单条数据所消耗时间:0.006 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.372s；最短耗时   0.000s；平均耗时   0.686s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.006s；最短耗时   0.004s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:27:23,875;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:27:22,总处理时间:1.48 s,处理数据总数:4条,平均处理速度:2.69 条/s,处理单条数据所消耗时间:0.005 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.372s；最短耗时   0.000s；平均耗时   0.343s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.006s；最短耗时   0.004s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:27:23,875;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:27:22,总处理时间:1.48 s,处理数据总数:6条,平均处理速度:4.04 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.372s；最短耗时   0.000s；平均耗时   0.229s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.006s；最短耗时   0.004s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:27:23,875;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:27:22,总处理时间:1.48 s,处理数据总数:8条,平均处理速度:5.39 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.372s；最短耗时   0.000s；平均耗时   0.171s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.006s；最短耗时   0.003s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:27:23,875;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:27:22,总处理时间:1.48 s,处理数据总数:10条,平均处理速度:6.73 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.372s；最短耗时   0.000s；平均耗时   0.137s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.006s；最短耗时   0.003s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.002s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:28:48,092;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:28:48,200;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:28:49,311;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:28:49,312;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:28:49,312;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:28:48,总处理时间:1.21 s,处理数据总数:2条,平均处理速度:1.66 条/s,处理单条数据所消耗时间:0.002 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.109s；最短耗时   0.000s；平均耗时   0.554s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.002s；最短耗时   0.002s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:28:49,312;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:28:48,总处理时间:1.21 s,处理数据总数:4条,平均处理速度:3.31 条/s,处理单条数据所消耗时间:0.002 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.109s；最短耗时   0.000s；平均耗时   0.277s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:28:49,312;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:28:49,312;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:28:48,总处理时间:1.21 s,处理数据总数:6条,平均处理速度:4.96 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.109s；最短耗时   0.000s；平均耗时   0.185s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:28:49,313;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:28:48,总处理时间:1.21 s,处理数据总数:8条,平均处理速度:6.61 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.109s；最短耗时   0.000s；平均耗时   0.139s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:28:49,313;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:28:49,313;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:28:48,总处理时间:1.21 s,处理数据总数:10条,平均处理速度:8.26 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.001s；最长耗时   1.109s；最短耗时   0.000s；平均耗时   0.111s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:28:49,313;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:28:49,313;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:28:49,315;INFO;ProcessScheduler.execute;Line:93;Message:ProcessScheduler thread stop
+2018-08-30 22:28:49,315;INFO;ProcessScheduler.execute;Line:94;Message:the app stop
+2018-08-30 22:30:27,730;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:30:27,845;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:30:28,855;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:30:28,855;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:30:28,859;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:30:28,861;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:30:27,总处理时间:1.12 s,处理数据总数:2条,平均处理速度:1.79 条/s,处理单条数据所消耗时间:0.008 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.004s；最短耗时   0.000s；平均耗时   0.502s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.007s；最长耗时   0.007s；最短耗时   0.004s；平均耗时   0.006s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.003s；最短耗时   0.001s；平均耗时   0.002s
+
+2018-08-30 22:30:28,861;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:30:27,总处理时间:1.12 s,处理数据总数:4条,平均处理速度:3.57 条/s,处理单条数据所消耗时间:0.010 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.004s；最短耗时   0.000s；平均耗时   0.251s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.010s；最长耗时   0.010s；最短耗时   0.004s；平均耗时   0.007s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.003s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:30:28,862;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:30:27,总处理时间:1.12 s,处理数据总数:6条,平均处理速度:5.36 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.004s；最短耗时   0.000s；平均耗时   0.167s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.010s；最短耗时   0.004s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.003s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:30:28,862;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:30:27,总处理时间:1.12 s,处理数据总数:8条,平均处理速度:7.14 条/s,处理单条数据所消耗时间:0.009 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.004s；最短耗时   0.000s；平均耗时   0.125s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.009s；最长耗时   0.010s；最短耗时   0.004s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.003s；最短耗时   0.000s；平均耗时   0.001s
+
+2018-08-30 22:30:28,864;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:30:27,总处理时间:1.12 s,处理数据总数:10条,平均处理速度:8.92 条/s,处理单条数据所消耗时间:0.008 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.004s；最短耗时   0.000s；平均耗时   0.100s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.008s；最长耗时   0.010s；最短耗时   0.004s；平均耗时   0.008s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.003s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:30:28,862;ERROR;BaseProcessor.run;Line:48;Message:'StopSignal' object has no attribute 'result'
+2018-08-30 22:30:28,864;INFO;BaseProcessor.run;Line:57;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:30:28,864;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:30:28,874;INFO;ProcessScheduler.execute;Line:94;Message:ProcessScheduler thread stop
+2018-08-30 22:30:28,874;INFO;ProcessScheduler.execute;Line:95;Message:the app stop
+2018-08-30 22:35:06,200;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:35:06,305;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:35:07,434;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:35:07,436;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:35:07,437;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:35:06,总处理时间:1.23 s,处理数据总数:2条,平均处理速度:1.63 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.128s；最短耗时   0.000s；平均耗时   0.564s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:35:07,438;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:35:06,总处理时间:1.23 s,处理数据总数:4条,平均处理速度:3.26 条/s,处理单条数据所消耗时间:0.003 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.128s；最短耗时   0.000s；平均耗时   0.282s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:35:07,438;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:35:06,总处理时间:1.23 s,处理数据总数:6条,平均处理速度:4.89 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.128s；最短耗时   0.000s；平均耗时   0.188s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:35:07,440;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:35:06,总处理时间:1.23 s,处理数据总数:8条,平均处理速度:6.51 条/s,处理单条数据所消耗时间:0.004 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.128s；最短耗时   0.000s；平均耗时   0.141s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:35:07,440;INFO;BaseProcessor.run;Line:59;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:35:07,440;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:35:06,总处理时间:1.23 s,处理数据总数:10条,平均处理速度:8.13 条/s,处理单条数据所消耗时间:0.005 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.128s；最短耗时   0.000s；平均耗时   0.113s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+
+2018-08-30 22:35:07,440;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:35:07,440;INFO;ProcessScheduler.execute;Line:94;Message:ProcessScheduler thread stop
+2018-08-30 22:35:07,440;INFO;ProcessScheduler.execute;Line:95;Message:the app stop
+2018-08-30 22:49:11,657;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:49:19,042;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:49:26,592;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:49:33,983;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:49:41,424;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:49:48,868;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:49:56,108;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:50:03,118;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:50:10,404;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 22:57:21,496;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+
+2018-08-30 22:57:21,588;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:57:22,750;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:57:22,752;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:59:11,770;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+     bizprocessor.GetRealPdfUrlProcessor.                  GetRealPdfUrlProcessor * 1
+
+2018-08-30 22:59:12,052;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 22:59:13,565;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 22:59:13,565;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:59:13,569;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 22:59:13,569;INFO;BaseProcessor.run;Line:59;Message:GetPdfUrlProcessor thread stop
+2018-08-30 22:59:15,654;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7740038
+2018-08-30 22:59:17,089;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7736991
+2018-08-30 22:59:17,095;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:59:11,总处理时间:5.32 s,处理数据总数:2条,平均处理速度:0.38 条/s,处理单条数据所消耗时间:3.527 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.512s；最短耗时   0.000s；平均耗时   0.756s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.001s；平均耗时   0.001s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   2.090s；最长耗时   2.090s；最短耗时   0.000s；平均耗时   1.045s
+GetRealPdfUrlProcessor                            :实时耗时   1.436s；最长耗时   2.090s；最短耗时   1.436s；平均耗时   1.763s
+
+2018-08-30 22:59:18,275;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875176
+2018-08-30 22:59:19,526;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 22:59:19,529;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:59:11,总处理时间:7.75 s,处理数据总数:4条,平均处理速度:0.52 条/s,处理单条数据所消耗时间:5.963 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.512s；最短耗时   0.000s；平均耗时   0.378s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.002s；最短耗时   0.001s；平均耗时   0.001s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   4.709s；最长耗时   4.709s；最短耗时   0.000s；平均耗时   2.581s
+GetRealPdfUrlProcessor                            :实时耗时   1.252s；最长耗时   2.090s；最短耗时   1.183s；平均耗时   1.490s
+
+2018-08-30 22:59:20,826;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 22:59:22,256;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 22:59:22,259;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:59:11,总处理时间:10.48 s,处理数据总数:6条,平均处理速度:0.57 条/s,处理单条数据所消耗时间:8.693 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.512s；最短耗时   0.000s；平均耗时   0.252s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   7.259s；最长耗时   7.259s；最短耗时   0.000s；平均耗时   3.924s
+GetRealPdfUrlProcessor                            :实时耗时   1.430s；最长耗时   2.090s；最短耗时   1.183s；平均耗时   1.448s
+
+2018-08-30 22:59:23,776;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 22:59:25,211;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 22:59:25,213;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 22:59:11,总处理时间:13.43 s,处理数据总数:8条,平均处理速度:0.60 条/s,处理单条数据所消耗时间:11.647 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.512s；最短耗时   0.000s；平均耗时   0.189s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  10.208s；最长耗时  10.208s；最短耗时   0.000s；平均耗时   5.305s
+GetRealPdfUrlProcessor                            :实时耗时   1.435s；最长耗时   2.090s；最短耗时   1.183s；平均耗时   1.456s
+
+2018-08-30 22:59:26,575;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7920423
+2018-08-30 22:59:28,221;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 22:59:28,223;INFO;BaseProcessor.run;Line:59;Message:GetRealPdfUrlProcessor thread stop
+30 22:59:11,总处理时间:16.44 s,处理数据总数:10条,平均处理速度:0.61 条/s,处理单条数据所消耗时间:14.657 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.512s；最短耗时   0.000s；平均耗时   0.151s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  13.006s；最长耗时  13.006s；最短耗时   0.000s；平均耗时   6.709s
+GetRealPdfUrlProcessor                            :实时耗时   1.647s；最长耗时   2.090s；最短耗时   1.183s；平均耗时   1.466s
+
+2018-08-30 22:59:28,223;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 22:59:28,236;INFO;ProcessScheduler.execute;Line:94;Message:ProcessScheduler thread stop
+2018-08-30 22:59:28,237;INFO;ProcessScheduler.execute;Line:95;Message:the app stop
+2018-08-30 23:15:22,348;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 23:15:30,038;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 23:15:37,558;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 23:15:42,563;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:17:16,733;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 23:17:24,240;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 23:17:32,049;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6792690
+2018-08-30 23:17:37,053;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:21:31,026;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+     bizprocessor.GetRealPdfUrlProcessor.                  GetRealPdfUrlProcessor * 1
+        bizprocessor.GetPdfFileProcessor.                     GetPdfFileProcessor * 1
+
+2018-08-30 23:21:31,305;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 23:21:32,752;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 23:21:32,753;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:21:32,756;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 23:21:32,756;INFO;BaseProcessor.run;Line:59;Message:GetPdfUrlProcessor thread stop
+2018-08-30 23:21:35,321;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7740038
+2018-08-30 23:21:36,908;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7736991
+2018-08-30 23:21:38,049;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875176
+2018-08-30 23:21:39,865;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:21:40,655;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1028096 bytes
+2018-08-30 23:21:41,443;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:21:42,783;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:21:44,279;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 23:21:46,463;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1040384 bytes
+2018-08-30 23:21:46,480;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:21:31,总处理时间:15.45 s,处理数据总数:2条,平均处理速度:0.13 条/s,处理单条数据所消耗时间:13.728 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.446s；最短耗时   0.000s；平均耗时   0.723s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   2.567s；最长耗时   2.567s；最短耗时   0.000s；平均耗时   1.283s
+GetRealPdfUrlProcessor                            :实时耗时   1.588s；最长耗时   2.569s；最短耗时   1.588s；平均耗时   2.079s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   3.758s；最长耗时   3.758s；最短耗时   0.000s；平均耗时   1.879s
+GetPdfFileProcessor                               :实时耗时   5.811s；最长耗时   5.811s；最短耗时   5.346s；平均耗时   5.579s
+
+2018-08-30 23:21:46,905;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 23:21:49,174;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7920423
+2018-08-30 23:21:50,779;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 23:21:50,780;INFO;BaseProcessor.run;Line:59;Message:GetRealPdfUrlProcessor thread stop
+2018-08-30 23:22:06,220;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1785856 bytes
+2018-08-30 23:22:07,901;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 184320 bytes
+2018-08-30 23:22:07,915;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:21:31,总处理时间:36.88 s,处理数据总数:4条,平均处理速度:0.11 条/s,处理单条数据所消耗时间:35.163 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.446s；最短耗时   0.000s；平均耗时   0.361s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   5.295s；最长耗时   5.295s；最短耗时   0.000s；平均耗时   3.004s
+GetRealPdfUrlProcessor                            :实时耗时   1.817s；最长耗时   2.569s；最短耗时   1.141s；平均耗时   1.779s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时  26.361s；最长耗时  26.361s；最短耗时   0.000s；平均耗时   9.637s
+GetPdfFileProcessor                               :实时耗时   1.686s；最长耗时  19.750s；最短耗时   1.686s；平均耗时   8.148s
+
+2018-08-30 23:22:45,592;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 10170368 bytes
+2018-08-30 23:23:16,907;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1912832 bytes
+2018-08-30 23:23:16,964;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:21:31,总处理时间:105.93 s,处理数据总数:6条,平均处理速度:0.06 条/s,处理单条数据所消耗时间:104.212 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.446s；最短耗时   0.000s；平均耗时   0.241s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.001s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   8.688s；最长耗时   8.688s；最短耗时   0.000s；平均耗时   4.636s
+GetRealPdfUrlProcessor                            :实时耗时   1.341s；最长耗时   2.569s；最短耗时   1.141s；平均耗时   1.672s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时  62.820s；最长耗时  62.820s；最短耗时   0.000s；平均耗时  21.306s
+GetPdfFileProcessor                               :实时耗时  31.359s；最长耗时  37.689s；最短耗时   1.686s；平均耗时  16.940s
+
+2018-08-30 23:23:27,769;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 2781184 bytes
+2018-08-30 23:23:36,453;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 2392064 bytes
+2018-08-30 23:23:36,463;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:21:31,总处理时间:125.43 s,处理数据总数:8条,平均处理速度:0.06 条/s,处理单条数据所消耗时间:123.711 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.446s；最短耗时   0.000s；平均耗时   0.181s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.001s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  11.524s；最长耗时  11.524s；最短耗时   0.000s；平均耗时   6.171s
+GetRealPdfUrlProcessor                            :实时耗时   2.626s；最长耗时   2.626s；最短耗时   1.141s；平均耗时   1.769s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时 100.877s；最长耗时 100.877s；最短耗时   0.000s；平均耗时  40.175s
+GetPdfFileProcessor                               :实时耗时   8.679s；最长耗时  37.689s；最短耗时   1.686s；平均耗时  15.143s
+
+2018-08-30 23:23:43,056;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1683456 bytes
+2018-08-30 23:24:18,313;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 7249920 bytes
+2018-08-30 23:24:18,323;INFO;BaseProcessor.run;Line:59;Message:GetPdfFileProcessor thread stop
+2018-08-30 23:24:18,325;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:21:31,总处理时间:167.29 s,处理数据总数:10条,平均处理速度:0.06 条/s,处理单条数据所消耗时间:165.572 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.446s；最短耗时   0.000s；平均耗时   0.145s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.001s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  16.419s；最长耗时  16.419s；最短耗时   0.000s；平均耗时   7.994s
+GetRealPdfUrlProcessor                            :实时耗时   1.605s；最长耗时   2.626s；最短耗时   1.141s；平均耗时   1.803s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时 112.291s；最长耗时 112.291s；最短耗时   0.000s；平均耗时  54.098s
+GetPdfFileProcessor                               :实时耗时  35.252s；最长耗时  37.689s；最短耗时   1.686s；平均耗时  16.300s
+
+2018-08-30 23:24:18,325;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:24:18,339;INFO;ProcessScheduler.execute;Line:94;Message:ProcessScheduler thread stop
+2018-08-30 23:24:18,339;INFO;ProcessScheduler.execute;Line:95;Message:the app stop
+2018-08-30 23:25:03,487;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+     bizprocessor.GetRealPdfUrlProcessor.                  GetRealPdfUrlProcessor * 1
+        bizprocessor.GetPdfFileProcessor.                     GetPdfFileProcessor * 10
+
+2018-08-30 23:25:03,816;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 23:25:05,055;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 23:25:05,058;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:25:05,061;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 23:25:05,062;INFO;BaseProcessor.run;Line:59;Message:GetPdfUrlProcessor thread stop
+2018-08-30 23:25:07,065;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7740038
+2018-08-30 23:25:08,290;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7736991
+2018-08-30 23:25:09,757;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875176
+2018-08-30 23:25:11,055;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:25:11,996;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1028096 bytes
+2018-08-30 23:25:12,269;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:25:13,545;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 184320 bytes
+2018-08-30 23:25:13,556;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:25:03,总处理时间:10.06 s,处理数据总数:2条,平均处理速度:0.20 条/s,处理单条数据所消耗时间:8.501 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.238s；最短耗时   0.000s；平均耗时   0.619s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   4.699s；最长耗时   4.699s；最短耗时   0.000s；平均耗时   2.350s
+GetRealPdfUrlProcessor                            :实时耗时   1.299s；最长耗时   2.010s；最短耗时   1.299s；平均耗时   1.655s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   2.498s；最长耗时   4.937s；最短耗时   2.498s；平均耗时   3.717s
+
+2018-08-30 23:25:13,730;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:25:15,026;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 23:25:15,405;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1040384 bytes
+2018-08-30 23:25:16,279;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 23:25:16,881;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1785856 bytes
+2018-08-30 23:25:16,891;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:25:03,总处理时间:13.39 s,处理数据总数:4条,平均处理速度:0.30 条/s,处理单条数据所消耗时间:11.837 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.238s；最短耗时   0.000s；平均耗时   0.310s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.005s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   3.233s；最长耗时   4.699s；最短耗时   0.000s；平均耗时   2.485s
+GetRealPdfUrlProcessor                            :实时耗时   1.467s；最长耗时   2.010s；最短耗时   1.225s；平均耗时   1.500s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   7.133s；最长耗时   7.133s；最短耗时   2.498s；平均耗时   5.422s
+
+2018-08-30 23:25:17,767;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7920423
+2018-08-30 23:25:19,046;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 23:25:19,048;INFO;BaseProcessor.run;Line:59;Message:GetRealPdfUrlProcessor thread stop
+2018-08-30 23:25:19,048;INFO;BaseProcessor.run;Line:59;Message:GetPdfFileProcessor thread stop
+2018-08-30 23:25:19,048;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:25:19,121;INFO;ProcessScheduler.execute;Line:94;Message:ProcessScheduler thread stop
+2018-08-30 23:25:19,121;INFO;ProcessScheduler.execute;Line:95;Message:the app stop
+2018-08-30 23:27:23,348;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+     bizprocessor.GetRealPdfUrlProcessor.                  GetRealPdfUrlProcessor * 1
+        bizprocessor.GetPdfFileProcessor.                     GetPdfFileProcessor * 10
+
+2018-08-30 23:27:23,608;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 23:27:24,796;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 23:27:24,796;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:27:24,799;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 23:27:24,802;INFO;BaseProcessor.run;Line:59;Message:GetPdfUrlProcessor thread stop
+2018-08-30 23:27:27,078;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7740038
+2018-08-30 23:27:28,171;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7736991
+2018-08-30 23:27:29,404;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875176
+2018-08-30 23:27:31,388;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:27:31,802;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 57344 bytes
+2018-08-30 23:27:32,292;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1028096 bytes
+2018-08-30 23:27:32,299;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:27:23,总处理时间:8.94 s,处理数据总数:2条,平均处理速度:0.22 条/s,处理单条数据所消耗时间:8.690 s
+IeeeDataProducer                                  :实时耗时   1.186s；最长耗时   1.186s；最短耗时   0.000s；平均耗时   0.593s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.004s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   0.000s；最长耗时   3.374s；最短耗时   0.000s；平均耗时   1.687s
+GetRealPdfUrlProcessor                            :实时耗时   2.282s；最长耗时   2.282s；最短耗时   1.232s；平均耗时   1.757s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   5.219s；最长耗时   5.219s；最短耗时   2.474s；平均耗时   3.847s
+
+2018-08-30 23:27:33,900;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1040384 bytes
+2018-08-30 23:27:43,365;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:27:50,588;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:27:55,598;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:27:58,042;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:27:58,598;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:27:23,总处理时间:35.24 s,处理数据总数:4条,平均处理速度:0.11 条/s,处理单条数据所消耗时间:33.805 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.186s；最短耗时   0.000s；平均耗时   0.296s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.004s；最长耗时   0.004s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.001s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   4.605s；最长耗时   4.605s；最短耗时   0.000s；平均耗时   2.565s
+GetRealPdfUrlProcessor                            :实时耗时  26.194s；最长耗时  26.194s；最短耗时   1.093s；平均耗时   7.700s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   3.001s；最长耗时   5.734s；最短耗时   2.474s；平均耗时   4.107s
+
+2018-08-30 23:28:05,255;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:28:12,515;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:28:17,519;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:28:19,900;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:28:27,418;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:28:34,730;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:28:39,737;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:28:42,102;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 23:28:42,740;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:27:23,总处理时间:79.38 s,处理数据总数:6条,平均处理速度:0.08 条/s,处理单条数据所消耗时间:77.946 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.186s；最短耗时   0.000s；平均耗时   0.198s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.006s；最短耗时   0.002s；平均耗时   0.004s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.001s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  52.720s；最长耗时  52.720s；最短耗时   0.000s；平均耗时  15.630s
+GetRealPdfUrlProcessor                            :实时耗时  22.218s；最长耗时  26.194s；最短耗时   1.093s；平均耗时  12.490s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   3.001s；最长耗时   5.734s；最短耗时   2.474s；平均耗时   3.738s
+
+2018-08-30 23:28:49,444;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 23:28:56,911;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 23:29:01,917;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:29:04,026;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 23:29:11,348;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 23:29:18,911;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 23:29:23,917;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:29:25,821;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7920423
+2018-08-30 23:29:26,918;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:27:23,总处理时间:123.56 s,处理数据总数:8条,平均处理速度:0.06 条/s,处理单条数据所消耗时间:122.124 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.186s；最短耗时   0.000s；平均耗时   0.148s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.006s；最长耗时   0.007s；最短耗时   0.002s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  97.117s；最长耗时  97.117s；最短耗时   0.000s；平均耗时  33.229s
+GetRealPdfUrlProcessor                            :实时耗时  21.999s；最长耗时  26.194s；最短耗时   1.093s；平均耗时  14.890s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   3.001s；最长耗时   5.734s；最短耗时   2.474s；平均耗时   3.554s
+
+2018-08-30 23:29:27,865;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 23:29:28,111;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 57344 bytes
+2018-08-30 23:29:35,451;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 23:29:42,417;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 23:29:47,424;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 3 times, but we still cannot get real pdf url
+2018-08-30 23:29:47,424;INFO;BaseProcessor.run;Line:59;Message:GetRealPdfUrlProcessor thread stop
+2018-08-30 23:29:47,424;INFO;BaseProcessor.run;Line:59;Message:GetPdfFileProcessor thread stop
+2018-08-30 23:29:47,424;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:29:47,438;INFO;ProcessScheduler.execute;Line:94;Message:
+开始运行时间:2018-08-30 23:27:23,总处理时间:124.83 s,处理数据总数:9条,平均处理速度:0.07 条/s,处理单条数据所消耗时间:123.392 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.186s；最短耗时   0.000s；平均耗时   0.132s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.007s；最长耗时   0.007s；最短耗时   0.002s；平均耗时   0.005s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时 119.115s；最长耗时 119.115s；最短耗时   0.000s；平均耗时  42.772s
+GetRealPdfUrlProcessor                            :实时耗时   1.906s；最长耗时  26.194s；最短耗时   1.093s；平均耗时  13.447s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   2.364s；最长耗时   5.734s；最短耗时   2.364s；平均耗时   3.422s
+
+2018-08-30 23:29:47,438;INFO;ProcessScheduler.execute;Line:95;Message:ProcessScheduler thread stop
+2018-08-30 23:29:47,438;INFO;ProcessScheduler.execute;Line:96;Message:the app stop
+2018-08-30 23:35:29,099;INFO;ProcessScheduler.execute;Line:71;Message:starts  3 process(including main process)
+process stage 1 starts 1 process:
+every bizprocessor thread in the process is the following：
+           bizprocessor.IeeeDataProducer.                        IeeeDataProducer * 1
+process stage 2 starts 1 process:
+every bizprocessor thread in the process is the following：
+         bizprocessor.GetPdfUrlProcessor.                      GetPdfUrlProcessor * 1
+     bizprocessor.GetRealPdfUrlProcessor.                  GetRealPdfUrlProcessor * 1
+        bizprocessor.GetPdfFileProcessor.                     GetPdfFileProcessor * 10
+
+2018-08-30 23:35:29,361;INFO;ApiSpider.queryData;Line:69;Message:key word: swarm ; query begin year: 2016 ; query end year: 2017 ; content_type: Journals ; open access: True
+2018-08-30 23:35:30,746;INFO;IeeeDataProducer.run;Line:72;Message:IeeeDataProducer thread stop
+2018-08-30 23:35:30,747;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:35:30,750;INFO;FirstProcessor.run;Line:47;Message:FirstProcessor thread stop
+2018-08-30 23:35:30,753;INFO;BaseProcessor.run;Line:59;Message:GetPdfUrlProcessor thread stop
+2018-08-30 23:35:33,203;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7740038
+2018-08-30 23:35:36,229;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7736991
+2018-08-30 23:35:36,621;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 53248 bytes
+2018-08-30 23:35:39,183;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875176
+2018-08-30 23:35:40,638;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 53248 bytes
+2018-08-30 23:35:40,709;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:35:29,总处理时间:11.60 s,处理数据总数:2条,平均处理速度:0.17 条/s,处理单条数据所消耗时间:9.963 s
+IeeeDataProducer                                  :实时耗时   0.001s；最长耗时   1.384s；最短耗时   0.001s；平均耗时   0.692s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.002s；最长耗时   0.002s；最短耗时   0.002s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时   3.455s；最长耗时   3.455s；最短耗时   0.000s；平均耗时   1.727s
+GetRealPdfUrlProcessor                            :实时耗时   3.028s；最长耗时   3.456s；最短耗时   3.028s；平均耗时   3.242s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   3.477s；最长耗时   3.477s；最短耗时   2.487s；平均耗时   2.982s
+
+2018-08-30 23:35:46,444;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875176
+2018-08-30 23:35:52,451;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 2 times, but we still cannot get real pdf url
+2018-08-30 23:35:56,040;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:36:04,644;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7956698
+2018-08-30 23:36:10,651;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 2 times, but we still cannot get real pdf url
+2018-08-30 23:36:13,161;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:36:14,654;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:35:29,总处理时间:45.55 s,处理数据总数:4条,平均处理速度:0.09 条/s,处理单条数据所消耗时间:43.907 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.384s；最短耗时   0.000s；平均耗时   0.346s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.003s；最长耗时   0.003s；最短耗时   0.002s；平均耗时   0.002s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.000s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  22.703s；最长耗时  22.703s；最短耗时   0.000s；平均耗时   8.160s
+GetRealPdfUrlProcessor                            :实时耗时  18.199s；最长耗时  18.199s；最短耗时   3.028s；平均耗时  10.226s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   3.001s；最长耗时   3.477s；最短耗时   2.487s；平均耗时   2.991s
+
+2018-08-30 23:36:21,335;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815348
+2018-08-30 23:36:27,341;ERROR;WebPageSpider.getRealPdfUrl;Line:78;Message:loop 2 times, but we still cannot get real pdf url
+2018-08-30 23:36:30,092;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:36:37,980;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7889009
+2018-08-30 23:36:40,229;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7885573
+2018-08-30 23:36:42,470;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7815347
+2018-08-30 23:36:44,530;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7920423
+2018-08-30 23:36:46,670;INFO;WebPageSpider.getRealPdfUrl;Line:86;Message:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7875154
+2018-08-30 23:36:46,959;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1912832 bytes
+2018-08-30 23:36:46,994;INFO;ProcessScheduler.execute;Line:87;Message:
+开始运行时间:2018-08-30 23:35:29,总处理时间:77.89 s,处理数据总数:6条,平均处理速度:0.08 条/s,处理单条数据所消耗时间:76.248 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.384s；最短耗时   0.000s；平均耗时   0.231s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  57.590s；最长耗时  57.590s；最短耗时   0.000s；平均耗时  21.855s
+GetRealPdfUrlProcessor                            :实时耗时  10.640s；最长耗时  18.199s；最短耗时   3.028s；平均耗时  11.372s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   8.012s；最长耗时   8.012s；最短耗时   2.487s；平均耗时   3.830s
+
+2018-08-30 23:36:47,673;INFO;BaseProcessor.run;Line:59;Message:GetRealPdfUrlProcessor thread stop
+2018-08-30 23:36:47,674;INFO;BaseProcessor.run;Line:59;Message:GetPdfFileProcessor thread stop
+2018-08-30 23:36:47,676;INFO;LastProcessor.run;Line:44;Message:LastProcessor thread stop
+2018-08-30 23:36:51,371;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 2781184 bytes
+2018-08-30 23:36:52,575;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 1683456 bytes
+2018-08-30 23:36:52,631;INFO;WebPageSpider.getPdfFile;Line:114;Message:success get file from the internet. the file size is 2392064 bytes
+2018-08-30 23:37:07,691;INFO;ProcessScheduler.execute;Line:95;Message:
+开始运行时间:2018-08-30 23:35:29,总处理时间:77.89 s,处理数据总数:6条,平均处理速度:0.08 条/s,处理单条数据所消耗时间:76.248 s
+IeeeDataProducer                                  :实时耗时   0.000s；最长耗时   1.384s；最短耗时   0.000s；平均耗时   0.231s
+   IeeeDataProducer-GetPdfUrlProcessor            :实时耗时   0.005s；最长耗时   0.005s；最短耗时   0.002s；平均耗时   0.003s
+GetPdfUrlProcessor                                :实时耗时   0.000s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+   GetPdfUrlProcessor-GetRealPdfUrlProcessor      :实时耗时  57.590s；最长耗时  57.590s；最短耗时   0.000s；平均耗时  21.855s
+GetRealPdfUrlProcessor                            :实时耗时  10.640s；最长耗时  18.199s；最短耗时   3.028s；平均耗时  11.372s
+   GetRealPdfUrlProcessor-GetPdfFileProcessor     :实时耗时   0.001s；最长耗时   0.001s；最短耗时   0.000s；平均耗时   0.000s
+GetPdfFileProcessor                               :实时耗时   8.012s；最长耗时   8.012s；最短耗时   2.487s；平均耗时   3.830s
+
+2018-08-30 23:37:07,693;INFO;ProcessScheduler.execute;Line:96;Message:ProcessScheduler thread stop
+2018-08-30 23:37:07,693;INFO;ProcessScheduler.execute;Line:97;Message:the app stop

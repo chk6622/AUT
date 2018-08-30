@@ -1,15 +1,14 @@
 #!/usr/bin/env python
-#_*_coding:utf-8_*_
+#coding: utf-8
 '''
-2016-6-8 下午3:23:30
-XingTong
+Created on Aug 30, 2018
+
+@author: xingtong
 '''
 import sys,time
-from log.StreamLogger import StreamLogger
+from logger.StreamLogger import StreamLogger
 
-#修改系统的默认编码模式为utf-8
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 
 class Statistics(object):
     

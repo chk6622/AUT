@@ -74,8 +74,8 @@ class WebPageSpider(object):
 #                 pt.printStartMessage('get real pdf url from the internet')
                 loop=0
                 while True:
-                    if loop>=20:
-                        appLogger.error('loop 10 times, but we still cannot get real pdf url')
+                    if loop>=2:
+                        appLogger.error('loop 2 times, but we still cannot get real pdf url')
                         break
                     loop+=1
                     result = opener.open(pdfUrl)
@@ -88,10 +88,10 @@ class WebPageSpider(object):
                         sReturn=soup.iframe.attrs.get('src')  #get real pdf url
                         break
                     else:
-                        time.sleep(5)
+                        time.sleep(6)
         except Exception, err:
             appLogger.error(err)
-            time.sleep(1)
+        time.sleep(1)
         queueLock.release()
         return sReturn
 #            
