@@ -15,6 +15,8 @@ import os
 import bizprocessor.GetPdfUrlProcessor
 import bizprocessor.GetRealPdfUrlProcessor
 import bizprocessor.GetPdfFileProcessor
+import bizprocessor.InsertPdfFileIntoMongoDBProcessor
+import bizprocessor.InsertResultIntoMongoDBProcessor
 
 
 class ConsumerThreadScheduler(object):

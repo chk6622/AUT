@@ -28,8 +28,9 @@ class GetPdfUrlProcessor(BaseProcessor):
     def process(self,processObj=None):
         
         if processObj:
+            print 'customer get a box from queue'
             pdfUrl=self.apiSpider.getPdfUrl(processObj.result)
-            print pdfUrl
+#             print pdfUrl
             processObj.pdfUrl=pdfUrl
         return processObj
 

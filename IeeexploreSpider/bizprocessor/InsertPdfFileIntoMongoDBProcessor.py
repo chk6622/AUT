@@ -1,45 +1,46 @@
 #!/usr/bin/env python
 #coding: utf-8
 '''
-Created on Aug 30, 2018
+Created on Aug 31, 2018
 
 @author: xingtong
 '''
 from baseprocessor.BaseProcessor import BaseProcessor
 from ieeexplorespider.WebPageSpider import WebPageSpider
+from dao.MongoDBDAO import MongoDBDAO
 from bizprocessor.GetPdfUrlProcessor import GetPdfUrlProcessor
 from bizprocessor.GetRealPdfUrlProcessor import GetRealPdfUrlProcessor
+from bizprocessor.GetPdfFileProcessor import GetPdfFileProcessor
 
-def getWebPageSipder(appConfig):
-    mainPageUrl=appConfig.get('WebPageSpider','MAIN_PAGE_URL')
-    cookiePath=appConfig.get('WebPageSpider','COOKIE_PATH')
-    tempDocPath=appConfig.get('WebPageSpider','TEMP_DOC_PATH')
-    return WebPageSpider(mainPageUrl,cookiePath,tempDocPath)
+def getDatabase(appConfig):
+    dbName=appConfig.get('DB', 'DB_NAME')
+    dbHost=appConfig.get('DB', 'DB_HOST')
+    dbPort=appConfig.get('DB', 'DB_PORT')
+    dbUser=appConfig.get('DB', 'DB_USER')
+    dbPass=appConfig.get('DB', 'DB_PASS')
+    dbColl=appConfig.get('DB', 'DB_COLL')
+    dbBinColl=appConfig.get('DB', 'DB_COLL_BIN')
+    return MongoDBDAO(dbName,dbHost,dbPort,dbUser,dbPass,dbColl,dbBinColl)
 
-class GetPdfFileProcessor(BaseProcessor):
+class InsertPdfFileIntoMongoDBProcessor(BaseProcessor):
     '''
-    this class is used to get real pdf file
+    this class is used to insert pdf file into a mongodb
     '''
 
     def __init__(self,inputQueue=None,outputQueue=None):
-        super(GetPdfFileProcessor,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
-        self.webSpider=getWebPageSipder(self.appConfig)
+        super(InsertPdfFileIntoMongoDBProcessor,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
+        self.mongoDBDAO=getDatabase(self.appConfig)
             
     def process(self,processObj=None):
         if processObj:
-            realPdfUrl=processObj.realPdfUrl
-            result=processObj.result
-            if realPdfUrl:            #if real file not exist then use simulated file
-                fileName=result.get('article_number')+'.pdf'
-            else:
-                fileName='simulated file.pdf'
-            processObj.fileName=fileName
-            fileTempPath=self.webSpider.generateTempFilePath(fileName)
-
-            flag=self.webSpider.getPdfFile(realPdfUrl, fileTempPath)
-
-            processObj.isGetFile=flag
-            processObj.fileTempPath=fileTempPath
+            fileTempPath=processObj.fileTempPath
+            fileName=processObj.fileName
+            if self.mongoDBDAO:
+                if processObj.isGetFile:  #if get pdf file success then save the file into the database
+                    fileId=self.mongoDBDAO.insertFile(fileTempPath, fileName, isDelFile=True)  #delete temp file
+                else:
+                    fileId=self.mongoDBDAO.insertFile(fileTempPath, fileName, isDelFile=False)  #not delete temp file
+            processObj.fileId=fileId
         return processObj
 
 if __name__ == '__main__':
@@ -52,4 +53,6 @@ if __name__ == '__main__':
     processObj=realUrlObj.process(processObj)
     pdfFileObj=GetPdfFileProcessor()
     processObj=pdfFileObj.process(processObj)
+    insertFileObj=InsertPdfFileIntoMongoDBProcessor()
+    processObj=insertFileObj.process(processObj)
     print processObj.fileTempPath

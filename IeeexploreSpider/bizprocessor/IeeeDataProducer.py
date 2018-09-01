@@ -13,7 +13,6 @@ from model.StopSignal import StopSignal
 from logger.LogConfig import appLogger
 from logger.StreamLogger import StreamLogger
 import time
-from ieeexplorespider.ApiSpider import IeeeApiSpider
 
 def getApiSpider(appConfig):
     apiKey=appConfig.get('ApiSpider','API_KEY')
@@ -34,6 +33,8 @@ class IeeeDataProducer(BaseProcessor):
     '''
     this class produces data which needs to be processed by streamline
     '''
+    productCount=0
+    
     def __init__(self,inputQueue=None,outputQueue=None):
         super(IeeeDataProducer,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
         self.apiSpider=getApiSpider(self.appConfig)
@@ -57,25 +58,35 @@ class IeeeDataProducer(BaseProcessor):
             if not results or len(results)==0:
                 appLogger.info('key word: %s results number is 0' % keyWord)
             else:
+                appLogger.info('key word: %s results number is %d' % (keyWord,len(results)))
                 for result in results:
                     yield result
             
         
     def run(self):
+        self.outputQueue.put(object(),block=True)
+        appLogger.info('init queue...')
+        time.sleep(20)
         while self.__class__.isServer:
             beginTime=time.time()
             processObj=self.process()
             endTime=time.time()
-            if isinstance(processObj,StopSignal):
-                self.__class__.isServer=False
+#             if isinstance(processObj,StopSignal):
+#                 self.__class__.isServer=False
 #                 processObj=None
-                appLogger.info('%s thread stop' % self.__class__.__name__)
+#                 appLogger.info('%s thread stop' % self.__class__.__name__)
             if isinstance(processObj, StreamLogger):
                 processObj.setProcessorLog(self.__class__.__name__,beginTime,endTime)
             if processObj and self.outputQueue:
+                if isinstance(processObj,StreamBox):
+                    self.__class__.productCount=self.__class__.productCount+1
+                if isinstance(processObj,StopSignal):
+                    processObj.productCount=self.__class__.productCount
+                    self.__class__.isServer=False
                 self.outputQueue.put(processObj,block=True)
-            else:
-                time.sleep(0.01)
+                
+                print 'producer put a box in the queue' 
+            time.sleep(0.01)
                 
 if __name__=='__main__':
     obj=IeeeDataProducer()

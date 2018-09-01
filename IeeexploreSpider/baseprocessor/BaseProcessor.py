@@ -41,7 +41,9 @@ class BaseProcessor(Thread):
             
             if self.inputQueue:
                 processObj=self.inputQueue.get(block=True)
-                
+                if not processObj:
+                    time.sleep(0.01)
+                    continue
             beginTime=time.time()
             try:
                 if processObj and isinstance(processObj,StreamBox):
@@ -54,9 +56,9 @@ class BaseProcessor(Thread):
             if processObj and isinstance(processObj, StreamLogger):
                 processObj.setProcessorLog(self.__class__.__name__,beginTime,endTime)
 
-            if processObj and isinstance(processObj,StopSignal):
-                self.__class__.isServer=False
-                appLogger.info('%s thread stop' % self.__class__.__name__)          
+#             if processObj and isinstance(processObj,StopSignal):
+#                 self.__class__.isServer=False
+#                 appLogger.info('%s thread stop' % self.__class__.__name__)          
             
             if processObj and self.outputQueue:
                 self.outputQueue.put(processObj,block=True)

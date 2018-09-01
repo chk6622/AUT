@@ -1,34 +1,43 @@
 #!/usr/bin/env python
 #coding: utf-8
 '''
-Created on Aug 30, 2018
+Created on Aug 31, 2018
 
 @author: xingtong
 '''
 from baseprocessor.BaseProcessor import BaseProcessor
 from ieeexplorespider.WebPageSpider import WebPageSpider
+from dao.MongoDBDAO import MongoDBDAO
 from bizprocessor.GetPdfUrlProcessor import GetPdfUrlProcessor
+from bizprocessor.GetRealPdfUrlProcessor import GetRealPdfUrlProcessor
+from bizprocessor.GetPdfFileProcessor import GetPdfFileProcessor
 
-def getWebPageSipder(appConfig):
-    mainPageUrl=appConfig.get('WebPageSpider','MAIN_PAGE_URL')
-    cookiePath=appConfig.get('WebPageSpider','COOKIE_PATH')
-    tempDocPath=appConfig.get('WebPageSpider','TEMP_DOC_PATH')
-    return WebPageSpider(mainPageUrl,cookiePath,tempDocPath)
+def getDatabase(appConfig):
+    dbName=appConfig.get('DB', 'DB_NAME')
+    dbHost=appConfig.get('DB', 'DB_HOST')
+    dbPort=appConfig.get('DB', 'DB_PORT')
+    dbUser=appConfig.get('DB', 'DB_USER')
+    dbPass=appConfig.get('DB', 'DB_PASS')
+    dbColl=appConfig.get('DB', 'DB_COLL')
+    dbBinColl=appConfig.get('DB', 'DB_COLL_BIN')
+    return MongoDBDAO(dbName,dbHost,dbPort,dbUser,dbPass,dbColl,dbBinColl)
 
-class GetRealPdfUrlProcessor(BaseProcessor):
+class InsertResultIntoMongoDBProcessor(BaseProcessor):
     '''
-    this class is used to get real pdf file's url
+    this class is used to insert article data into the mongodb
     '''
 
     def __init__(self,inputQueue=None,outputQueue=None):
-        super(GetRealPdfUrlProcessor,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
-        self.webSpider=getWebPageSipder(self.appConfig)
+        super(InsertResultIntoMongoDBProcessor,self).__init__(inputQueue=inputQueue,outputQueue=outputQueue)
+        self.mongoDBDAO=getDatabase(self.appConfig)
             
     def process(self,processObj=None):
         if processObj:
-            realPdfUrl=self.webSpider.getRealPdfUrl(processObj.pdfUrl)
-#             print realPdfUrl
-            processObj.realPdfUrl=realPdfUrl
+            fileId=processObj.fileId
+            result=processObj.result
+            if self.mongoDBDAO:
+                result['fileId']=fileId  #set fileId in the result
+                self.mongoDBDAO.insertOneData(**result)  #save a result into the database
         return processObj
 
 if __name__ == '__main__':
@@ -39,4 +48,9 @@ if __name__ == '__main__':
     processObj=obj.process(processObj)
     realUrlObj=GetRealPdfUrlProcessor()
     processObj=realUrlObj.process(processObj)
-    print processObj.realPdfUrl
+    pdfFileObj=GetPdfFileProcessor()
+    processObj=pdfFileObj.process(processObj)
+    insertFileObj=InsertPdfFileIntoMongoDBProcessor()
+    processObj=insertFileObj.process(processObj)
+    insertResultObj=InsertPdfFileIntoMongoDBProcessor()
+    insertResultObj.process(processObj)

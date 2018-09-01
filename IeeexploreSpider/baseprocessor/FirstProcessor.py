@@ -34,6 +34,9 @@ class FirstProcessor(BaseProcessor):
             
             if self.inputQueue:
                 processObj=self.inputQueue.get()
+                if not processObj:
+                    time.sleep(0.01)
+                    continue
                 
 #             beginTime=time.time()   
             processObj=self.process(processObj=processObj)
@@ -42,9 +45,9 @@ class FirstProcessor(BaseProcessor):
 #             if isinstance(processObj, StreamLogger):
 #                 processObj.setProcessorLog(self.__class__.__name__,beginTime,endTime)
 
-            if processObj and isinstance(processObj,StopSignal):
-                self.__class__.isServer=False
-                appLogger.info('%s thread stop' % self.__class__.__name__)          
+#             if processObj and isinstance(processObj,StopSignal):
+#                 self.__class__.isServer=False
+#                 appLogger.info('%s thread stop' % self.__class__.__name__)          
             
             if processObj and self.outputQueue:
 #                 print 'outputQueue队列长度：%s' % self.outputQueue.qsize()

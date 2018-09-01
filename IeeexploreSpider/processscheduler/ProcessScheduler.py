@@ -14,6 +14,7 @@ from model.StopSignal import StopSignal
 from logger.StreamLogger import StreamLogger
 from logger.LogConfig import appLogger
 from model.StreamBox import StreamBox
+from bizprocessor.IeeeDataProducer import IeeeDataProducer
 
 
 class ProcessScheduler(object):
@@ -75,20 +76,23 @@ class ProcessScheduler(object):
             process.start()  #start processor
         
         process_record=0
+        productCount=-1
         stat=Statistics()
         while True:
             streamBox=outputQueue.get()
             if streamBox:
                 if isinstance(streamBox, StreamLogger):
                     stat.addProcessorLog(streamBox)
-                if not isinstance(streamBox, StopSignal):
-                    process_record+=1
+                    process_record+=1  #the product which has been processed adds 1
                     if process_record%2==0:
                         appLogger.info('\n%s' % stat.getStatisticInfo())  #print log
-                else:
-                    time.sleep(20)
+                if isinstance(streamBox, StopSignal):
+                    productCount=streamBox.productCount  #get product count
+                if productCount==process_record:  #if product count equals processed product count then stop app
                     break
                 del(streamBox)
+            
+                
         for process in processList:
             process.terminate()
             process.join()
