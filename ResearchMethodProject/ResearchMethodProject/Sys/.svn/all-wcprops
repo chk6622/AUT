@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys
+END
+SysView.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/SysView.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/tests.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/__init__.py
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/admin.py
+END
+url.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/url.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/views.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/Sys/models.py
+END

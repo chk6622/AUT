@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/cloud_search_management
+END
+queryCloudSearch.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/cloud_search_management/queryCloudSearch.html
+END
+editCloudSearch.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/cloud_search_management/editCloudSearch.html
+END
+addCloudSearch.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/cloud_search_management/addCloudSearch.html
+END

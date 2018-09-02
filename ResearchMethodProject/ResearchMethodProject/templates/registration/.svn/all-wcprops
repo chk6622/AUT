@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration
+END
+password_reset_email.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration/password_reset_email.html
+END
+password_reset_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration/password_reset_form.html
+END
+password_reset_done.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration/password_reset_done.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration/base.html
+END
+password_reset_complete.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration/password_reset_complete.html
+END
+password_reset_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/registration/password_reset_confirm.html
+END

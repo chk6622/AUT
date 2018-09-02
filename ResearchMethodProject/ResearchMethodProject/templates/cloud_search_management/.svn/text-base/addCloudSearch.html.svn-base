@@ -1,0 +1,200 @@
+{%extends 'base_template/add_edit_page/addOrEditBase.html'%}
+
+{%block title%}添加云搜问题记录{%endblock%}
+
+{%block saveOrUpdateForm%}
+<form method='post' action='/CloudSearchManagement/saveOrUpdate/' enctype='multipart/form-data'>
+{%csrf_token%}
+{{optObjForm.id}}
+{{optObjForm.uploadDir}}
+
+<br>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="20%">&nbsp;</td>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="1"
+					bgcolor="b5d6e6">
+
+					<tr>
+						<td width="98%" height="22"
+							bgcolor="#CDEAF8" colspan='2'>
+							<div align="left">
+								&nbsp;&nbsp;<span class="STYLE3">新增云搜问题记录</span>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td width="25%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.submitDate.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="75%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.submitDate}}<span class="helptext">{{optObjForm.submitDate.help_text}}</span>{{optObjForm.submitDate.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.finishDate.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="radio">{{optObjForm.finishDate}}<span class="helptext">{{optObjForm.finishDate.help_text}}</span></span>{{optObjForm.finishDate.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.problemType.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.problemType}}<span class="helptext">{{optObjForm.problemType.help_text}}</span>{{optObjForm.problemType.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.problem.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.problem}}<span class="helptext">{{optObjForm.problem.help_text}}</span>{{optObjForm.problem.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.problemReason.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.problemReason}}<span class="helptext">{{optObjForm.problemReason.help_text}}</span>{{optObjForm.problemReason.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.treatment.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.treatment}}<span class="helptext">{{optObjForm.treatment.help_text}}</span></span>{{optObjForm.treatment.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.handleState.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="radio">{{optObjForm.handleState}}<span class="helptext">{{optObjForm.handleState.help_text}}</span></span>{{optObjForm.handleState.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file1.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file1}}<span class="helptext">{{optObjForm.file1.help_text}}</span>{{optObjForm.file1.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file2.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file2}}<span class="helptext">{{optObjForm.file2.help_text}}</span>{{optObjForm.file2.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file3.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file3}}<span class="helptext">{{optObjForm.file3.help_text}}</span>{{optObjForm.file3.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file4.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file4}}<span class="helptext">{{optObjForm.file4.help_text}}</span>{{optObjForm.file4.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file5.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file5}}<span class="helptext">{{optObjForm.file5.help_text}}</span>{{optObjForm.file5.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" height="22" bgcolor="#FFFFFF" colspan='2'>
+							<div align="center">
+								<span class="STYLE1"><input type='submit' value='提交' /></span>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<span class="notify">
+				*&nbsp;为必填项<br>
+				</span>
+			</td>
+			<td width="20%">&nbsp;</td>
+		</tr>
+	</table>
+</form>
+{%endblock%}

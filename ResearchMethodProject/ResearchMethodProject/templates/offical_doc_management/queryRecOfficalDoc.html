@@ -1,0 +1,152 @@
+{% extends 'base_template/query_page/queryTable.html' %} 
+
+{%block query_url%}/RecOfficalDocManagement/query{%endblock%}
+
+{%block queryParam%}
+<tr>
+  <td width="98%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF" colspan='8'>
+   	<div align="left">&nbsp;&nbsp;<span class="STYLE3">公文查询</span></div>
+  </td>
+</tr>
+<tr>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.recDate.label_tag}}</span></div>
+   </td>
+   <td width="40%" height="22"  bgcolor="#FFFFFF" colspan='3'>
+   	<div align="center"><span class="STYLE1">{{queryForm.b_recDate}}-{{queryForm.e_recDate}}{{queryForm.b_recDate.help_text}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.finishDate.label_tag}}</span></div>
+   </td>
+   <td width="40%" height="22"  bgcolor="#FFFFFF" colspan='3'>
+   	<div align="center"><span class="STYLE1">{{queryForm.b_finishDate}}-{{queryForm.e_finishDate}}{{queryForm.b_recDate.help_text}}</span></div>
+   </td>
+ </tr>
+<tr>
+	<td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.recDep.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.recDep}}</span></div>
+   </td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.docTitle.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.docTitle}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.docNum.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.docNum}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.leader_qry.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.leader_qry}}</span></div>
+   </td>
+ </tr>
+ <tr>
+ 	<td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.handler.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.handler}}</span></div>
+   </td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.recDocDate.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF" colspan='3'>
+   	<div align="center"><span class="STYLE1">{{queryForm.b_recDocDate}}-{{queryForm.e_recDocDate}}{{queryForm.b_recDocDate.help_text}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1"></span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1"></span></div>
+   </td> 
+ </tr>
+{%endblock%}
+
+{%block list_name%}查询公文列表{% endblock%} 
+
+{%block add_button%}
+{%if perms.OfficalDocManagement.add_recofficaldoc%}
+<table width="90%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="STYLE1"><div align="center">
+				<img src="/static/tab/images/22.gif" width="14" height="14" />
+			</div></td>
+		<td class="STYLE1">
+			<div align="center">
+				<a href='/RecOfficalDocManagement/add/'>新增</a>
+			</div>
+		</td>
+	</tr>
+</table>
+{%endif%}
+{%endblock%}
+
+{%block export_button%}
+{%if perms.OfficalDocManagement.export_recofficaldoc%}
+<table width="90%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="STYLE1"><div align="center">
+				<img src="/static/tab/images/33.gif" width="14" height="14" />
+			</div></td>
+		<td class="STYLE1">
+			<div align="center">
+				<a href='/RecOfficalDocManagement/exportData/'>导出</a>
+			</div>
+		</td>
+	</tr>
+</table>
+{%endif%}
+{%endblock%}
+
+{%block table_title%}
+<tr>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">来文单位</span></div></td>
+  <td width="14%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">公文标题</span></div></td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">文号</span></div></td>
+  <td width="6%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">来文日期</span></div></td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">承办人</span></div></td>
+  <td width="6%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">接收日期</span></div></td>
+  <td width="6%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">办理情况</span></div></td>
+  <td width="28%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">完成情况</span></div></td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF" class="STYLE1"><div align="center">操作</div></td>
+</tr>
+{%endblock%}
+
+{%block table_body%}
+	{% if queryResultList %}
+		{%for optObj in queryResultList%}
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.recDep|default_if_none:''}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.docTitle}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.docNum}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.recDocDate|date:'Y-m-d'}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.handler}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.recDate|date:'Y-m-d'}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.get_handleSituation_display}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.completionStatus|default_if_none:''}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF">
+	            <div align="center">
+		            <span class="STYLE4">
+		            {%if perms.OfficalDocManagement.change_recofficaldoc%}
+		            <img src="/static/tab/images/edt.gif" width="16" height="16" /><a href='/RecOfficalDocManagement/edit/?id={{optObj.id}}'>编辑</a>
+		            {%endif%}
+		            {%if perms.OfficalDocManagement.delete_recofficaldoc%}
+		            <img src="/static/tab/images/del.gif" width="16" height="16" />
+		            <a href="javascript:locationUrl('您确定删除该条记录吗？','/RecOfficalDocManagement/delete/?id={{optObj.id}}')">删除</a>
+		            {%endif%}
+		            </span>
+	            </div>
+            </td>
+          </tr>
+   		{%endfor%}
+   {%endif%}
+{%endblock%}
+

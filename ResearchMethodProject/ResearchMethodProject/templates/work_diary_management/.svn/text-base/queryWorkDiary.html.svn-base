@@ -1,0 +1,152 @@
+{% extends 'base_template/query_page/queryTable.html' %} 
+
+{%block query_url%}/WorkDiaryManagement/query{%endblock%}
+
+{%block queryParam%}
+<tr>
+  <td width="98%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF" colspan='8'>
+   	<div align="left">&nbsp;&nbsp;<span class="STYLE3">查询工作日记</span></div>
+  </td>
+</tr>
+<tr>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.workDate.label_tag}}</span></div>
+   </td>
+   <td width="40%" height="22"  bgcolor="#FFFFFF" colspan='3'>
+   	<div align="center"><span class="STYLE1">{{queryForm.b_workDate}}-{{queryForm.e_workDate}}{{queryForm.b_workDate.help_text}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.title.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.title}}</span></div>
+   </td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.userFullName_qry.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.userFullName_qry}}</span></div>
+   </td>
+ </tr>
+<tr>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.officalDocName_qry.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.officalDocName_qry}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.officalDocNo_qry.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.officalDocNo_qry}}</span></div>
+   </td>
+   <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1"></span></div>
+   </td>
+   <td width="15%" height="22" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1"></span></div>
+   </td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1"></span></div>
+   </td>
+   <td width="15%" height="22"  bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1"></span></div>
+   </td>
+ </tr>
+ <tr>
+	<td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.referParentProject_qry.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22" bgcolor="#FFFFFF" colspan='7'>
+   	<div align="left"><span class="STYLE1">{{queryForm.referParentProject_qry}}</span></div>
+   </td>
+   </td>
+ </tr>
+ <tr>
+	<td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF">
+   	<div align="center"><span class="STYLE1">{{queryForm.referProject_qry.label_tag}}</span></div>
+   </td>
+   <td width="15%" height="22" bgcolor="#FFFFFF" colspan='7'>
+   	<div align="left"><span class="STYLE1">{{queryForm.referProject_qry}}</span></div>
+   </td>
+   </td>
+ </tr>
+{%endblock%}
+
+{%block list_name%}工作日记列表{% endblock%} 
+
+{%block add_button%}
+{%if perms.WorkDiaryManagement.add_workdiary%}
+<table width="90%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="STYLE1"><div align="center">
+				<img src="/static/tab/images/22.gif" width="14" height="14" />
+			</div></td>
+		<td class="STYLE1">
+			<div align="center">
+				<a href='/WorkDiaryManagement/add/'>新增</a>
+			</div>
+		</td>
+	</tr>
+</table>
+{%endif%}
+{%endblock%}
+
+{%block export_button%}
+{%if perms.WorkDiaryManagement.export_workdiary%}
+<table width="90%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="STYLE1"><div align="center">
+				<img src="/static/tab/images/33.gif" width="14" height="14" />
+			</div></td>
+		<td class="STYLE1">
+			<div align="center">
+				<a href='/WorkDiaryManagement/exportData/'>导出</a>
+			</div>
+		</td>
+	</tr>
+</table>
+{%endif%}
+{%endblock%}
+
+{%block table_title%}
+<tr>
+  <td width="8%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">日期</span></div></td>
+  <td width="8%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">用户姓名</span></div></td>
+  <td width="20%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">标题</span></div></td>
+  <td width="34%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">相关项目</span></div></td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">创建时间</span></div></td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">更新时间</span></div></td>
+  <td width="10%" height="22" background="/static/tab/images/bg.gif" bgcolor="#FFFFFF" class="STYLE1"><div align="center">操作</div></td>
+</tr>
+{%endblock%}
+
+{%block table_body%}
+	{% if queryResultList %}
+		{%for optObj in queryResultList%}
+          <tr>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.workDate|date:'Y-m-d'}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.userFullName}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.title}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.referProject.parentProject}} — {{optObj.referProject}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.createTime|date:'Y-m-d H:i:s'}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">{{optObj.updateTime|date:'Y-m-d H:i:s'}}</span></div></td>
+            <td height="20" bgcolor="#FFFFFF">
+	            <div align="center">
+		            <span class="STYLE4">
+		            {%if perms.WorkDiaryManagement.change_workdiary%}
+		            <img src="/static/tab/images/edt.gif" width="16" height="16" /><a href='/WorkDiaryManagement/edit/?id={{optObj.id}}'>编辑</a>
+		            {%endif%}
+		            {%if perms.WorkDiaryManagement.delete_workdiary%}
+		            <img src="/static/tab/images/del.gif" width="16" height="16" />
+		            <a href="javascript:locationUrl('您确定删除该条记录吗？','/WorkDiaryManagement/delete/?id={{optObj.id}}')">删除</a>
+		            {%endif%}
+		            </span>
+	            </div>
+            </td>
+          </tr>
+   		{%endfor%}
+   {%endif%}
+{%endblock%}
+

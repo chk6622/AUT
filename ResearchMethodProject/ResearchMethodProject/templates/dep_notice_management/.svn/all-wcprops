@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/dep_notice_management
+END
+addDepNotice.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/dep_notice_management/addDepNotice.html
+END
+queryDepNotice.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/dep_notice_management/queryDepNotice.html
+END
+loginDepNotice.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/dep_notice_management/loginDepNotice.html
+END
+editDepNotice.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/dep_notice_management/editDepNotice.html
+END

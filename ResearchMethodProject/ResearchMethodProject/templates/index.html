@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>登录页</title>
+</head>
+<script language='javascript'>
+function mysubmit()
+{
+	/*if(document.getElementsByName('username')[0].value=='')
+	{
+		document.getElementsByName('username')[0].value='admin';
+	}
+	if(document.getElementsByName('password')[0].value=='')
+	{
+		document.getElementsByName('password')[0].value='1234';
+	}*/
+	window.document.forms[0].submit();
+}
+</script>
+<body>
+{%if form.errors%}
+	{%for message in form.errors%}
+		
+	{%endfor%}
+{%endif%}
+{%if messages%}
+	{%for message in messages%}
+		{{message}}
+	{%endfor%}
+{%endif%}
+<form method='post' action='' onsubmit='submit()'>
+{%csrf_token%}
+用户名：{{form.username}}{{form.username.errors}}
+密码:{{form.password}}{{form.password.errors}}
+<input type='hidden' name='next' value='{{next|escape}}'/>
+<input type='button' value='登录' value='login' onclick='mysubmit()'/>
+</form>
+
+</body>
+</html>

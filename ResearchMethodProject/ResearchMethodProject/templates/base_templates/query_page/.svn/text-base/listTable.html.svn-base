@@ -1,0 +1,120 @@
+{% extends 'base_template/query_page/listTableBase.html' %}
+
+{%block script%}
+$(function(){
+	queryUrl='{%block query_url%}{%endblock%}'
+	$('#to_next_page_image').click(function(){  //下一页
+		window.location=queryUrl+'/?pageSize={{pageSize}}&pageNum={{nextPageNum}}'
+	}).hover(function(){
+				$(this).addClass('mouseHover')
+			},function(){
+				$(this).removeClass('mouseHover')
+			});
+	$('#to_prev_page_image').click(function(){  //上一页
+		window.location=queryUrl+'/?pageSize={{pageSize}}&pageNum={{prevPageNum}}'
+	}).hover(function(){
+				$(this).addClass('mouseHover')
+			},function(){
+				$(this).removeClass('mouseHover')
+			});
+	$('#to_first_page_image').click(function(){  //第一页
+		window.location=queryUrl+'/?pageSize={{pageSize}}&pageNum=1'
+	}).hover(function(){
+				$(this).addClass('mouseHover')
+			},function(){
+				$(this).removeClass('mouseHover')
+			});
+	$('#to_last_page_image').click(function(){  //最后一页
+		window.location=queryUrl+'/?pageSize={{pageSize}}&pageNum={{maxPageNum}}'
+	}).hover(function(){
+				$(this).addClass('mouseHover')
+			},function(){
+				$(this).removeClass('mouseHover')
+			});
+	$('#skip_url_image').click(function(){  //跳到第x页
+		pageNum=$('#skip_url_textfield').val()
+		window.location=queryUrl+'/?pageSize={{pageSize}}&pageNum='+pageNum
+	}).hover(function(){
+				$(this).addClass('mouseHover')
+			},function(){
+				$(this).removeClass('mouseHover')
+			});
+});
+function locationUrl(msg,url)  //跳转到特定url
+{
+	if(msg!=null)
+	{
+		if(confirm(msg))
+		{
+			window.location=url;
+		}
+	}
+	else
+	{
+		window.location=url;
+	}
+	
+}
+{%endblock%}
+
+{%block table_head%}
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="/static/tab/images/tab_03.gif" width="12" height="30" /></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="46%" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="5%"><div align="center"><img src="/static/tab/images/tb.gif" width="16" height="16" /></div></td>
+                <td width="95%" class="STYLE1"><span class="STYLE3">{%block list_name%}{% endblock%}</td>
+              </tr>
+            </table></td>
+            <td width="54%"><table border="0" align="right" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="60"></td>
+                <td width="60"></td>
+                <td width="60">{%block export_button%}{%endblock%}</td>
+                <td width="52">{%block add_button%}{%endblock%}</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="16"><img src="/static/tab/images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+{%endblock%}
+
+{%block table_foot%}
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="35"><img src="/static/tab/images/tab_18.gif" width="12" height="35" /></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="STYLE4">&nbsp;&nbsp;共有{%block total_size%}{{totalSize}}{%endblock%}条记录，当前显示从第{%block page_size%}{{beginSize}}条-第{{endSize}}条{%endblock%}，当前为第{%block page_num%}{{pageNum}}/{{maxPageNum}}{%endblock%}页</td>
+            <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+                <tr>       
+                  <td width="40">
+                  	<img id='to_first_page_image' src="/static/tab/images/first.gif" width="37" height="15" />
+                  </td>
+                  <td width="45">
+                  	<img id='to_prev_page_image' src="/static/tab/images/back.gif" width="43" height="15" />
+                  </td>
+                  <td width="45">
+                  	<img id='to_next_page_image' src="/static/tab/images/next.gif" width="43" height="15" />
+                  </td> 
+                  <td width="40">
+                  	<img id='to_last_page_image' src="/static/tab/images/last.gif" width="37" height="15" />
+                  </td>  
+                  <td width="100"><div align="center"><span class="STYLE1">转到第
+                    <input id='skip_url_textfield' name="textfield" type="text" size="4" style="height:12px; width:20px; border:1px solid #999999;" /> 
+                    页</span></div></td>
+                  <td width="40"><img id='skip_url_image' src="/static/tab/images/go.gif" width="37" height="15" /></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="16"><img src="/static/tab/images/tab_20.gif" width="16" height="35" /></td>
+      </tr>
+    </table> 
+{%endblock%}
+

@@ -1,0 +1,382 @@
+{%extends 'base_template/add_edit_page/addOrEditBase.html'%}
+
+{%block title%}编辑数据服务记录{%endblock%}
+
+{%block saveOrUpdateForm%}
+<form method='post' action='/DataServiceManagement/saveOrUpdate/' enctype='multipart/form-data'>
+{%csrf_token%}
+{{optObjForm.id}}
+{{optObjForm.uploadDir}}
+
+<br>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="20%">&nbsp;</td>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="1"
+					bgcolor="b5d6e6">
+
+					<tr>
+						<td width="98%" height="22"
+							bgcolor="#CDEAF8" colspan='2'>
+							<div align="left">
+								&nbsp;&nbsp;<span class="STYLE3">编辑数据服务记录</span>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td width="25%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDep.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="75%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDep}}<span class="helptext">{{optObjForm.recDep.help_text}}</span>{{optObjForm.recDep.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.isRecOfficalDoc.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="radio">{{optObjForm.isRecOfficalDoc}}<span class="helptext">{{optObjForm.isRecOfficalDoc.help_text}}</span></span>{{optObjForm.isRecOfficalDoc.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recOfficalDocTitle.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recOfficalDocTitle}}<span class="helptext">{{optObjForm.recOfficalDocTitle.help_text}}</span>{{optObjForm.recOfficalDocTitle.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recOfficalDocNum.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recOfficalDocNum}}<span class="helptext">{{optObjForm.recOfficalDocNum.help_text}}</span>{{optObjForm.recOfficalDocNum.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDepContacts.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDepContacts}}<span class="helptext">{{optObjForm.recDepContacts.help_text}}</span>{{optObjForm.recDepContacts.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDepTelNo.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDepTelNo}}<span class="helptext">{{optObjForm.recDepTelNo.help_text}}</span>{{optObjForm.recDepTelNo.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recOfficalDocDescribe.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recOfficalDocDescribe}}<span class="helptext">{{optObjForm.recOfficalDocDescribe.help_text}}</span>{{optObjForm.recOfficalDocDescribe.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDataMedium.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="radio">{{optObjForm.recDataMedium}}<span class="helptext">{{optObjForm.recDataMedium.help_text}}</span></span>{{optObjForm.recDataMedium.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDataMediumDescribe.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDataMediumDescribe}}<span class="helptext">{{optObjForm.recDataMediumDescribe.help_text}}</span>{{optObjForm.recDataMediumDescribe.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDataProcReq.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDataProcReq}}<span class="helptext">{{optObjForm.recDataProcReq.help_text}}</span>{{optObjForm.recDataProcReq.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDataDeadLine.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDataDeadLine}}<span class="helptext">{{optObjForm.recDataDeadLine.help_text}}</span>{{optObjForm.recDataDeadLine.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.handler.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.handler}}<span class="helptext">{{optObjForm.handler.help_text}}</span>{{optObjForm.handler.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.finishDate.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.finishDate}}<span class="helptext">{{optObjForm.finishDate.help_text}}</span>{{optObjForm.finishDate.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.dataProcDescribe.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.dataProcDescribe}}<span class="helptext">{{optObjForm.dataProcDescribe.help_text}}</span>{{optObjForm.dataProcDescribe.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.dataProcResult.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.dataProcResult}}<span class="helptext">{{optObjForm.dataProcResult.help_text}}</span>{{optObjForm.dataProcResult.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.purpose.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="radio">{{optObjForm.purpose}}<span class="helptext">{{optObjForm.purpose.help_text}}</span></span>{{optObjForm.purpose.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.purposeDescribe.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.purposeDescribe}}<span class="helptext">{{optObjForm.purposeDescribe.help_text}}</span>{{optObjForm.purposeDescribe.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.sendDep.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.sendDep}}<span class="helptext">{{optObjForm.sendDep.help_text}}</span>{{optObjForm.sendDep.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.isSendOfficalDoc.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="radio">{{optObjForm.isSendOfficalDoc}}<span class="helptext">{{optObjForm.isSendOfficalDoc.help_text}}</span></span>{{optObjForm.isSendOfficalDoc.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.sendOfficalDocTitle.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.sendOfficalDocTitle}}<span class="helptext">{{optObjForm.sendOfficalDocTitle.help_text}}</span>{{optObjForm.sendOfficalDocTitle.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.sendOfficalDocNum.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.sendOfficalDocNum}}<span class="helptext">{{optObjForm.sendOfficalDocNum.help_text}}</span>{{optObjForm.sendOfficalDocNum.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.sendOfficalDocDescribe.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.sendOfficalDocDescribe}}<span class="helptext">{{optObjForm.sendOfficalDocDescribe.help_text}}</span>{{optObjForm.sendOfficalDocDescribe.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.sendDataMedium.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="radio">{{optObjForm.sendDataMedium}}<span class="helptext">{{optObjForm.sendDataMedium.help_text}}</span></span>{{optObjForm.sendDataMedium.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.sendDataMediumDescribe.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.sendDataMediumDescribe}}<span class="helptext">{{optObjForm.sendDataMediumDescribe.help_text}}</span>{{optObjForm.sendDataMediumDescribe.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">首次创建用户和时间:</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="STYLE1">&nbsp;{{optObj.createUser}} / {{optObj.createTime|date:'Y-m-d H:i:s'}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">最后更新用户和时间:</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="STYLE1">&nbsp;{{optObj.updateUser}} / {{optObj.updateTime|date:'Y-m-d H:i:s'}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" height="22" bgcolor="#FFFFFF" colspan='2'>
+							<div align="center">
+								<span class="STYLE1"><input type='submit' value='提交' /></span>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<span class="notify">
+				*&nbsp;为必填项<br>
+				</span>
+			</td>
+			<td width="20%">&nbsp;</td>
+		</tr>
+	</table>
+</form>
+{%endblock%}

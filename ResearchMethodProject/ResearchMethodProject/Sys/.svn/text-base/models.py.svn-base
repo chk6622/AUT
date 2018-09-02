@@ -1,0 +1,66 @@
+#_*_coding:utf-8_*_
+from django.db import models
+from django.db.models.fields.related import ForeignKey
+from django.contrib import admin
+from django.forms import ModelForm
+from django import forms
+from django.forms.widgets import Widget
+from django.contrib import admin
+from django.contrib.auth.models import User
+from django.contrib.auth.admin import UserAdmin
+from django import forms
+from django.contrib.auth.forms import *
+
+# Create your models here.
+
+user_headship=[
+               ('11',u'处长'),
+               ('12',u'副处长'),
+               ('13',u'调研员'),
+               ('14',u'副调研员'),
+               ('16',u'科员'),
+               ('20',u'技术人员')
+               ]
+
+def getChoice(choiceList,hasBlank=False):
+    returnList=[]
+    if choiceList and isinstance(choiceList,list):
+        if hasBlank:
+            returnList.append(('',u'-'*25))
+            returnList.extend(choiceList)
+        else:
+            returnList.extend(choiceList)
+    return returnList
+
+class MyProfileForm(UserChangeForm):
+#     pass
+    cid=forms.CharField(label=u'身份证件号码',max_length=20,required=False)
+    headship=forms.ChoiceField(label=u'职务',help_text=u'',required=True,choices=getChoice(user_headship,True),widget=forms.Select)
+
+class ProfileBase(type):
+    def __new__(cls,name,bases,attrs):
+        module=attrs.pop('__module__')
+        parents=[b for b in bases if isinstance(b,ProfileBase)]
+        if parents:
+            fields=[]
+            for (obj_name,obj) in attrs.items():
+                if isinstance(obj,models.Field):
+                    fields.append(obj_name)
+                User.add_to_class(obj_name,obj)
+            UserAdmin.fieldsets=list(UserAdmin.fieldsets)
+            UserAdmin.fieldsets.append((name,{'fields':fields}))
+            UserAdmin.form=MyProfileForm
+        return super(ProfileBase,cls).__new__(cls, name,bases,attrs)
+
+class Profile(object):
+    __metaclass__=ProfileBase
+    
+class MyProfile(Profile):
+#     pass
+    cid=models.CharField(u'身份证件号码',max_length=20,null=True,blank=True)
+    headship=models.CharField(u'职务',choices=user_headship,max_length=20,null=True,blank=True)
+    
+
+                    
+
+

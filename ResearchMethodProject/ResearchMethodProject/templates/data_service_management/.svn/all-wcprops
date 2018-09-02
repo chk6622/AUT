@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/data_service_management
+END
+queryDataService.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/data_service_management/queryDataService.html
+END
+editDataService.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/data_service_management/editDataService.html
+END
+addDataService.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/kuangjia/!svn/ver/775/DepWorkSite/src/template/data_service_management/addDataService.html
+END

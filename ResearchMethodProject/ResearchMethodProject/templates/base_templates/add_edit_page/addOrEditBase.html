@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type='text/javascript' src='/static/scripts/jquery-1.7.2.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.STYLE1 {font-size: 12px}
+.STYLE3 {font-size: 12px; font-weight: bold; }
+.STYLE4 {
+	color: #03515d;
+	font-size: 12px;
+}
+.errorlist{
+	font-size: 12px;
+	color:red
+}
+.helptext{
+	color:red
+}
+.deleteFileName{
+	text-decoration:line-through
+}
+.notify{
+	color: red;
+	font-size: 12px;
+}
+.radio{
+	font-size: 12px
+}
+.radio ul{
+	list-style:none;
+	margin:0 10px 0 10px;
+	padding:0 0 0 0px;
+	line-height:0px;
+	overflow:visible;
+	
+	/*background:red*/
+}
+.radio ul li{
+	list-style:none;
+	display:inline;
+	float:left;
+}
+-->
+</style>
+<script language="javascript">
+{%if messages%}
+	{%for message in messages%}
+		{% ifequal message.tags 'error'%}
+			alert('{{message}}')
+		{% endifequal %}
+		{% ifequal message.tags 'info'%}
+			alert('{{message}}')
+		{% endifequal %}
+	{%endfor%}
+{%endif%}
+</script>
+{%block saveOrUpdateForm%}
+
+{%endblock%}
+</body>
+</html>

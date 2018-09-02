@@ -1,0 +1,316 @@
+{%extends 'base_template/add_edit_page/addOrEditBase.html'%}
+
+{%block title%}编辑接收公文{%endblock%}
+
+{%block saveOrUpdateForm%}
+<script language="javascript">
+function downloadFile(fileName)
+{
+	uId=document.getElementsByName('id')[0].value
+	href='/RecOfficalDocManagement/download/?id='+uId+'&fileName='+fileName
+	window.location=href
+}
+function deleteFile(fileName)
+{
+	if(window.confirm('您确认要删除文件:'+fileName+'吗?'))
+	{
+		if(document.getElementsByName('deleteFileName')[0].value!='')
+		{
+			document.getElementsByName('deleteFileName')[0].value=document.getElementsByName('deleteFileName')[0].value+';'+fileName
+		}
+		else
+		{
+			document.getElementsByName('deleteFileName')[0].value=fileName
+		}
+		document.getElementById(fileName).className='deleteFileName'
+	}
+	
+}
+$(function(){
+	$('#createDataService').click(function(){
+		if(confirm('您确定要使用本数据创建一条数据服务记录吗？'))
+		{
+			uId=document.getElementsByName('id')[0].value
+			href='/RecOfficalDocManagement/createdataservice/?id='+uId
+			window.location=href
+		}
+	}
+			
+				
+	);
+})
+</script>
+<form method='post' action='/RecOfficalDocManagement/saveOrUpdate/' enctype='multipart/form-data'>
+<input type='hidden' name='deleteFileName' id='deleteFileName'/>
+{%csrf_token%}
+{{optObjForm.id}}
+{{optObjForm.uploadDir}}
+<br>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="20%">&nbsp;</td>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="1"
+					bgcolor="b5d6e6">
+
+					<tr>
+						<td width="98%" height="22"
+							bgcolor="#CDEAF8" colspan='2'>
+							<div align="left">
+								&nbsp;&nbsp;<span class="STYLE3">编辑接收公文</span>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td width="20%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDep.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="80%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDep}}<span class="helptext">{{optObjForm.recDep.help_text}}</span>{{optObjForm.recDep.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="20%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDocDate.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="80%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDocDate}}<span class="helptext">{{optObjForm.recDocDate.help_text}}</span>{{optObjForm.recDocDate.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.docTitle.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.docTitle}}<span class="helptext">{{optObjForm.docTitle.help_text}}</span>{{optObjForm.docTitle.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.docNum.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.docNum}}<span class="helptext">{{optObjForm.docNum.help_text}}</span>{{optObjForm.docNum.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDocType.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDocType}}<span class="helptext">{{optObjForm.recDocType.help_text}}</span>{{optObjForm.recDocType.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.content.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.content}}<span class="helptext">{{optObjForm.content.help_text}}</span>{{optObjForm.content.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.leader.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.leader}}<span class="helptext">{{optObjForm.leader.help_text}}</span>{{optObjForm.leader.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.handler.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.handler}}<span class="helptext">{{optObjForm.handler.help_text}}</span>{{optObjForm.handler.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.handleSituation.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.handleSituation}}<span class="helptext">{{optObjForm.handleSituation.help_text}}</span>{{optObjForm.handleSituation.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.completionStatus.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.completionStatus}}<span class="helptext">{{optObjForm.completionStatus.help_text}}</span>{{optObjForm.completionStatus.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.recDate.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.recDate}}<span class="helptext">{{optObjForm.recDate.help_text}}</span>{{optObjForm.recDate.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.finishDate.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.finishDate}}<span class="helptext">{{optObjForm.finishDate.help_text}}</span>{{optObjForm.finishDate.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file1.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file1}}<span class="helptext">{{optObjForm.file1.help_text}}</span>{{optObjForm.file1.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file2.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file2}}<span class="helptext">{{optObjForm.file2.help_text}}</span>{{optObjForm.file2.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file3.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file3}}<span class="helptext">{{optObjForm.file3.help_text}}</span>{{optObjForm.file3.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">首次创建用户和时间:</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="STYLE1">&nbsp;{{optObj.createUser}} / {{optObj.createTime|date:'Y-m-d H:i:s'}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">最后更新用户和时间:</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								<span class="STYLE1">&nbsp;{{optObj.updateUser}} / {{optObj.updateTime|date:'Y-m-d H:i:s'}}</span>
+							</div>
+						</td>
+					</tr>
+					{%if uploadFileList%}
+					<tr>
+						<td width="15%" height="22" bgcolor="#FFFFFF" colspan='2'>
+							<div align="center">
+								<span class="STYLE1">
+									{%for fileName,dirPath in uploadFileList%}
+										<span id='{{fileName}}'><a name='{{fileName}}' href="javascript:downloadFile('{{fileName}}')">{{fileName}}</a></span>&nbsp;
+										<a href="javascript:deleteFile('{{fileName}}')">删除</a><br>
+									{%endfor%}
+								
+								</span>
+							</div>
+						</td>
+					</tr>
+					{%endif%}
+					<tr>
+						<td width="100%" height="22" bgcolor="#FFFFFF" colspan='2'>
+							<div align="center">
+								<span class="STYLE1"><input type='submit' value='提交' /></span>
+								<span class="STYLE1"><input type='button' id='createDataService' value='创建数据服务记录' /></span>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<span class="notify">*&nbsp;为必填项</span>
+			</td>
+			<td width="20%">&nbsp;</td>
+		</tr>
+	</table>
+</form>
+{%endblock%}

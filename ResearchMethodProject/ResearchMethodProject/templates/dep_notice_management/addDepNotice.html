@@ -1,0 +1,256 @@
+{%extends 'base_template/add_edit_page/addOrEditBase.html'%}
+
+{%block title%}添加部门通知{%endblock%}
+
+{%block saveOrUpdateForm%}
+<style type="text/css">
+<!--
+.radio ul li{
+	width:20%;
+	vertical-align:middle
+}
+.radio ul li label{
+	vertical-align:middle
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+	leaders=['{{optObjForm.leaders|join:'\',\''}}']
+	officers=['{{optObjForm.officers|join:'\',\''}}']
+	others=['{{optObjForm.others|join:'\',\''}}']
+	$(function(){
+		$('#select_leader').click(function(){
+			if($(this).attr('checked'))
+			{
+				$('#id_noticeUser li label :checkbox').each(function(){
+					value=$(this).attr('value');
+					for(var ind=0;ind<leaders.length;ind++)
+					{
+						leader=leaders[ind];
+						if(leader==value)
+						{
+							$(this).attr('checked',true);
+							break;
+						}
+					}
+				})
+			}
+			else
+			{
+				$('#id_noticeUser li label :checkbox').each(function(){
+					value=$(this).attr('value');
+					for(var ind=0;ind<leaders.length;ind++)
+					{
+						leader=leaders[ind];
+						if(leader==value)
+						{
+							$(this).attr('checked',false);
+							break;
+						}
+					}
+				})
+			}
+		});
+		$('#select_officer').click(function(){
+			if($(this).attr('checked'))
+			{
+				$('#id_noticeUser li label :checkbox').each(function(){
+					value=$(this).attr('value');
+					for(var ind=0;ind<officers.length;ind++)
+					{
+						officer=officers[ind];
+						if(officer==value)
+						{
+							$(this).attr('checked',true);
+							break;
+						}
+					}
+				})
+			}
+			else
+			{
+				$('#id_noticeUser li label :checkbox').each(function(){
+					value=$(this).attr('value');
+					for(var ind=0;ind<officers.length;ind++)
+					{
+						officer=officers[ind];
+						if(officer==value)
+						{
+							$(this).attr('checked',false);
+							break;
+						}
+					}
+				})
+			}
+		});
+		$('#select_others').click(function(){
+			if($(this).attr('checked'))
+			{
+				$('#id_noticeUser li label :checkbox').each(function(){
+					value=$(this).attr('value');
+					for(var ind=0;ind<others.length;ind++)
+					{
+						other=others[ind];
+						if(other==value)
+						{
+							$(this).attr('checked',true);
+							break;
+						}
+					}
+				})
+			}
+			else
+			{
+				$('#id_noticeUser li label :checkbox').each(function(){
+					value=$(this).attr('value');
+					for(var ind=0;ind<others.length;ind++)
+					{
+						other=others[ind];
+						if(other==value)
+						{
+							$(this).attr('checked',false);
+							break;
+						}
+					}
+				})
+			}
+		});
+		$('#select_all').click(function(){
+			if($(this).attr('checked'))
+			{
+				$('#id_noticeUser li label :checkbox').attr('checked',true)
+			}
+			else
+			{
+				$('#id_noticeUser li label :checkbox').attr('checked',false);
+			}
+		});
+		
+		
+	})
+//-->
+</script>
+<form method='post' action='/DepNoticeManagement/saveOrUpdate/' enctype='multipart/form-data'>
+{%csrf_token%}
+{{optObjForm.id}}
+{{optObjForm.uploadDir}}
+
+<br>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="20%">&nbsp;</td>
+			<td>
+				<table width="100%" border="0" cellpadding="0" cellspacing="1"
+					bgcolor="b5d6e6">
+
+					<tr>
+						<td width="98%" height="22"
+							bgcolor="#CDEAF8" colspan='2'>
+							<div align="left">
+								&nbsp;&nbsp;<span class="STYLE3">新增通知</span>
+							</div>
+						</td>
+					</tr>	
+					<tr>
+						<td width="25%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.title.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="75%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.title}}<span class="helptext">{{optObjForm.title.help_text}}</span>{{optObjForm.title.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.content.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="radio">{{optObjForm.content}}<span class="helptext">{{optObjForm.content.help_text}}</span></span>{{optObjForm.content.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="150"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.noticeUser.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="150" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;
+								<span class="radio">
+								<input id="select_all" type="checkbox"/>  所有人
+								<input id="select_leader" type="checkbox"/>  处领导
+								<input id="select_officer" type="checkbox"/> 干警
+								<input id="select_others" type="checkbox"/>  技术人员
+								</span>
+								<span class="radio">{{optObjForm.noticeUser}}<span class="helptext">{{optObjForm.noticeUser.help_text}}</span></span>{{optObjForm.noticeUser.errors}}
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file1.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file1}}<span class="helptext">{{optObjForm.file1.help_text}}</span>{{optObjForm.file1.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file2.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file2}}<span class="helptext">{{optObjForm.file2.help_text}}</span>{{optObjForm.file2.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="10%" height="22"
+							bgcolor="#E9F6FC">
+							<div align="center">
+								<span class="STYLE1">{{optObjForm.file3.label_tag}}</span>&nbsp;
+							</div>
+						</td>
+						<td width="15%" height="22" bgcolor="#FFFFFF">
+							<div align="left">
+								&nbsp;<span class="STYLE1">{{optObjForm.file3}}<span class="helptext">{{optObjForm.file3.help_text}}</span>{{optObjForm.file3.errors}}</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" height="22" bgcolor="#FFFFFF" colspan='2'>
+							<div align="center">
+								<span class="STYLE1"><input type='submit' value='提交' /></span>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<span class="notify">
+				*&nbsp;为必填项<br>
+				</span>
+			</td>
+			<td width="20%">&nbsp;</td>
+		</tr>
+	</table>
+</form>
+{%endblock%}
