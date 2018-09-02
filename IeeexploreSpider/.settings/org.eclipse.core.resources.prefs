@@ -13,6 +13,7 @@ encoding//executer/NormalExecuter.py=utf-8
 encoding//executer/NormalMulitThreadExecuter.py=utf-8
 encoding//executer/StreamlineExecuter.py=utf-8
 encoding//ieeexplorespider/ApiSpider.py=utf-8
+encoding//ieeexplorespider/TestWebPageSpider.py=utf-8
 encoding//ieeexplorespider/WebPageSpider.py=utf-8
 encoding//logger/LogConfig.py=utf-8
 encoding//logger/Statistics.py=utf-8

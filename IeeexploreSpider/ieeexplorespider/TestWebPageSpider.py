@@ -25,6 +25,7 @@ class WebPageSpider(object):
 #     MAIN_PAGE_URL=r'https://www.ieee.org/'
 #     COOKIE_PATH=r'../temp/cookie.txt'
 #     TEMP_DOC_PATH=r'../temp/'
+    CONNECT_COUNT=0
     
     def __init__(self,mainPageUrl=None,cookiePath=None,tempDocPath=None):
         if mainPageUrl:
@@ -33,32 +34,23 @@ class WebPageSpider(object):
             self.COOKIE_PATH=cookiePath
         if tempDocPath:
             self.TEMP_DOC_PATH=tempDocPath
-        self.requestHeaders=[
-                            {'User-Agent':r'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; rv:11.0) like Gecko'}
-                            ,{'User-Agent':r'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0'}
-#                             ,{'User-Agent':r'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Maxthon 2.0)'}
-#                             ,{'User-Agent':r'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)'}
-#                             ,{'User-Agent':r'Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11'}
-#                             ,{'User-Agent':r'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0'}
-#                             ,{'User-Agent':r'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'}
-                            ]
-        try:
-             #login web site
-            #claim a MozillaCookieJar instance to save cookie
-            cookie = cookielib.MozillaCookieJar(self.COOKIE_PATH)
-            opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
-            urllib2.install_opener(opener)
-            #access main page, and save attributes to the cookie
-            response=urllib2.urlopen(self.MAIN_PAGE_URL)
-            #save cookie
-            cookie.save(ignore_discard=True, ignore_expires=True)
-
-        except Exception, err:
-            appLogger.error(err)
             
-    def getRandomRequestHeaders(self):
-        end=len(self.requestHeaders)-1
-        return self.requestHeaders[random.randrange(0,end)]
+    def getRandomDelayTime(self):
+        minDelay=1
+        maxDelay=3
+        if self.__class__.CONNECT_COUNT<=5:
+            minDelay=1 #normal delay
+            maxDelay=3
+        elif self.__class__.CONNECT_COUNT<=10:
+            minDelay=1*1.15 #-15% delay
+            maxDelay=3*1.15
+        elif self.__class__.CONNECT_COUNT<=15:
+            pass #-30% delay
+        elif self.__class__.CONNECT_COUNT<=20:
+            pass # -45% delay
+        else:
+            pass #-60%delay
+        return random.randrange(1,3,1)
         
     def generateTempFilePath(self,fileName):
         '''
